@@ -1,2 +1,1 @@
-# EASkins
-A winform skin library. Integrate and optimize some different kind of skin style code. 
+.NET的界面库，收集整合多个优秀库及示例。

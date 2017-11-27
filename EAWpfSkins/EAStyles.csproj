@@ -7,8 +7,8 @@
     <ProjectGuid>{8F778F88-6758-45BE-B79B-AEC5844B3E80}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EAWpfSkins</RootNamespace>
-    <AssemblyName>EAWpfSkins</AssemblyName>
+    <RootNamespace>EAStyles</RootNamespace>
+    <AssemblyName>EAStyles</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -50,25 +50,25 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\Diamond\DMWindow.cs" />
+    <Compile Include="Controls\MiStyle\MiWindow.cs" />
     <Compile Include="Controls\Utility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Themes\Diamond\DMWindow.xaml.cs">
-      <DependentUpon>DMWindow.xaml</DependentUpon>
+    <Compile Include="Themes\MiStyle\MiWindow.xaml.cs">
+      <DependentUpon>MiWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Themes\Theme.cs" />
     <Compile Include="Utility\Element\ElementBase.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Themes\Diamond\Diamond.xaml">
+    <Page Include="Themes\MiStyle\MiStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Themes\Diamond\DMWindow.xaml">
+    <Page Include="Themes\MiStyle\MiWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Themes\Diamond\DMBase.xaml">
+    <Page Include="Themes\MiStyle\MiBase.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

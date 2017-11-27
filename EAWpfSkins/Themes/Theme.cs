@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Media;
 
-namespace EAWpfSkins.Themes
+namespace EAStyles.Themes
 {
     public class Theme
     {

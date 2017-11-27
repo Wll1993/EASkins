@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arthas", "Arthas\Arthas.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arthas.Demo", "Arthas.Demo\Arthas.Demo.csproj", "{20827429-E998-4EA3-BB34-DB49CBD0FCC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAWpfSkins", "EAWpfSkins\EAWpfSkins.csproj", "{8F778F88-6758-45BE-B79B-AEC5844B3E80}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAStyles", "EAWpfSkins\EAStyles.csproj", "{8F778F88-6758-45BE-B79B-AEC5844B3E80}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAWpfDemo", "EAWpfDemo\EAWpfDemo.csproj", "{C378711B-20A0-4DBD-88AF-71B449628F88}"
 EndProject

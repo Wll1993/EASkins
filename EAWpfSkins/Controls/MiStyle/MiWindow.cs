@@ -1,18 +1,18 @@
-﻿using EAWpfSkins.Themes;
-using EAWpfSkins.Utility.Element;
+﻿using EAStyles.Themes;
+using EAStyles.Utility.Element;
 using System;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
 
-namespace EAWpfSkins.Controls.Diamond
+namespace EAStyles.Controls.MiStyle
 {
-    public class DMWindow : Window
+    public class MiWindow : Window
     {
-        public static readonly DependencyProperty IsSubWindowShowProperty = ElementBase.Property<DMWindow, bool>("IsSubWindowShowProperty", false);
-        public static readonly DependencyProperty MenuProperty = ElementBase.Property<DMWindow, object>("MenuProperty", null);
-        public static readonly new DependencyProperty BorderBrushProperty = ElementBase.Property<DMWindow, Brush>("BorderBrushProperty");
-        public static readonly DependencyProperty TitleForegroundProperty = ElementBase.Property<DMWindow, Brush>("TitleForegroundProperty");
+        public static readonly DependencyProperty IsSubWindowShowProperty = ElementBase.Property<MiWindow, bool>("IsSubWindowShowProperty", false);
+        public static readonly DependencyProperty MenuProperty = ElementBase.Property<MiWindow, object>("MenuProperty", null);
+        public static readonly new DependencyProperty BorderBrushProperty = ElementBase.Property<MiWindow, Brush>("BorderBrushProperty");
+        public static readonly DependencyProperty TitleForegroundProperty = ElementBase.Property<MiWindow, Brush>("TitleForegroundProperty");
 
         public bool IsSubWindowShow { get { return (bool)GetValue(IsSubWindowShowProperty); } set { SetValue(IsSubWindowShowProperty, value); GoToState(); } }
         public object Menu { get { return GetValue(MenuProperty); } set { SetValue(MenuProperty, value); } }
@@ -47,7 +47,7 @@ namespace EAWpfSkins.Controls.Diamond
             }
         }
 
-        public DMWindow()
+        public MiWindow()
         {
             // 修复WindowChrome导致的窗口大小错误
             var sizeToContent = SizeToContent.Manual;
@@ -83,9 +83,9 @@ namespace EAWpfSkins.Controls.Diamond
             Utility.Refresh(this);
         }
 
-        static DMWindow()
+        static MiWindow()
         {
-            ElementBase.DefaultStyle<DMWindow>(DefaultStyleKeyProperty);
+            ElementBase.DefaultStyle<MiWindow>(DefaultStyleKeyProperty);
         }
     }
 }

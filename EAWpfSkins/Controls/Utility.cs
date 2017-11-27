@@ -1,8 +1,8 @@
-﻿using EAWpfSkins.Controls.Diamond;
+﻿using EAStyles.Controls.MiStyle;
 using System.ComponentModel;
 using System.Windows;
 
-namespace EAWpfSkins.Controls
+namespace EAStyles.Controls
 {
     public class Utility
     {
@@ -32,7 +32,7 @@ namespace EAWpfSkins.Controls
 
         static void SetColor(FrameworkElement control)
         {
-            Window mw = Window.GetWindow(control) is DMWindow ? Window.GetWindow(control) as DMWindow : null;
+            Window mw = Window.GetWindow(control) is MiWindow ? Window.GetWindow(control) as MiWindow : null;
             if (mw != null)
             {
                 //if (control is DMTitleMenu)

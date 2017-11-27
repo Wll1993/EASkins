@@ -1,8 +1,8 @@
 ﻿using System.Windows;
 
-namespace EAWpfSkins.Themes.Diamond
+namespace EAStyles.Themes.MiStyle
 {
-    public partial class DMWindow
+    public partial class MiWindow
     {
         void Minimized(object sender, RoutedEventArgs e)
         {

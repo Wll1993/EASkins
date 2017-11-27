@@ -95,9 +95,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EAWpfSkins\EAWpfSkins.csproj">
+    <ProjectReference Include="..\EAWpfSkins\EAStyles.csproj">
       <Project>{8f778f88-6758-45be-b79b-aec5844b3e80}</Project>
-      <Name>EAWpfSkins</Name>
+      <Name>EAStyles</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

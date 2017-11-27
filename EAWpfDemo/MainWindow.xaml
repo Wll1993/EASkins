@@ -1,9 +1,10 @@
 ﻿<DM:DMWindow x:Class="EAWpfDemo.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Local="clr-namespace:EAWpfDemo"
         xmlns:DM="clr-namespace:EAWpfSkins.Controls.Diamond;assembly=EAWpfSkins"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Button Content="test"  Click="Button_Click" Margin="106,79,210.4,162.8"></Button>
     </Grid>
 </DM:DMWindow>

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using EAWpfSkins.Controls.Diamond;
+using System.ComponentModel;
 using System.Windows;
 
 namespace EAWpfSkins.Controls
@@ -30,20 +31,51 @@ namespace EAWpfSkins.Controls
 
         static void SetColor(FrameworkElement control)
         {
-            //var mw = Window.GetWindow(control) is DMWindow ? Window.GetWindow(control) as DMWindow : null;
-            //if (mw != null)
-            //{
-            //    if (control is MetroTitleMenu) { (control as MetroTitleMenu).Background = mw.BorderBrush; }
-            //    if (control is MetroTitleMenuItem) { (control as MetroTitleMenuItem).Background = mw.BorderBrush; }
-            //    if (control is MetroMenuItem) { (control as MetroMenuItem).Background = mw.BorderBrush; }
-            //    if (control is MetroContextMenu) { (control as MetroContextMenu).Background = mw.BorderBrush; }
-            //    if (control is MetroTextBox) { (control as MetroTextBox).BorderBrush = mw.BorderBrush; }
-            //    if (control is MetroButton) { (control as MetroButton).Background = mw.BorderBrush; }
-            //    if (control is MetroMenuTabControl) { (control as MetroMenuTabControl).BorderBrush = mw.BorderBrush; }
-            //    if (control is MetroRichTextBox) { (control as MetroRichTextBox).MouseMoveThemeBorderBrush = mw.BorderBrush; }
-            //    if (control is MetroCanvasGrid) { if ((control as MetroCanvasGrid).IsApplyTheme) (control as MetroCanvasGrid).Background = new RgbaColor(mw.BorderBrush).OpaqueSolidColorBrush; }
-            //    if (control is MetroColorPicker) { (control as MetroColorPicker).BorderBrush = mw.BorderBrush; }
-            //}
+            Window mw = Window.GetWindow(control) is DMWindow ? Window.GetWindow(control) as DMWindow : null;
+            if (mw != null)
+            {
+                //if (control is DMTitleMenu)
+                //{
+                //    (control as DMTitleMenu).Background = mw.BorderBrush;
+                //}
+                //if (control is DMTitleMenuItem)
+                //{
+                //    (control as DMTitleMenuItem).Background = mw.BorderBrush;
+                //}
+                //if (control is DMMenuItem)
+                //{
+                //    (control as DMMenuItem).Background = mw.BorderBrush;
+                //}
+                //if (control is DMContextMenu)
+                //{
+                //    (control as DMContextMenu).Background = mw.BorderBrush;
+                //}
+                //if (control is DMTextBox)
+                //{
+                //    (control as DMTextBox).BorderBrush = mw.BorderBrush;
+                //}
+                //if (control is DMButton)
+                //{
+                //    (control as DMButton).Background = mw.BorderBrush;
+                //}
+                //if (control is DMMenuTabControl)
+                //{
+                //    (control as DMMenuTabControl).BorderBrush = mw.BorderBrush;
+                //}
+                //if (control is DMRichTextBox)
+                //{
+                //    (control as DMRichTextBox).MouseMoveThemeBorderBrush = mw.BorderBrush;
+                //}
+                //if (control is DMCanvasGrid)
+                //{
+                //    if ((control as DMCanvasGrid).IsApplyTheme)
+                //        (control as DMCanvasGrid).Background = new RgbaColor(mw.BorderBrush).OpaqueSolidColorBrush;
+                //}
+                //if (control is DMColorPicker)
+                //{
+                //    (control as DMColorPicker).BorderBrush = mw.BorderBrush;
+                //}
+            }
         }
     }
 }

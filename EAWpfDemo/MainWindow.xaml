@@ -3,8 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Local="clr-namespace:EAWpfDemo"
         xmlns:DM="clr-namespace:EAWpfSkins.Controls.Diamond;assembly=EAWpfSkins"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="336.307" Width="448.11">
     <Grid>
-        <Button Content="test"  Click="Button_Click" Margin="106,79,210.4,162.8"></Button>
+        <Button Content="test"  Click="Button_Click" Margin="160,110,210.4,162.8" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-47.828"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
     </Grid>
 </DM:DMWindow>

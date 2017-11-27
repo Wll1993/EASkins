@@ -1,5 +1,4 @@
-﻿using EAWpfSkins.Controls;
-using EAWpfSkins.Themes;
+﻿using EAWpfSkins.Themes;
 using EAWpfSkins.Utility.Element;
 using System;
 using System.Windows;

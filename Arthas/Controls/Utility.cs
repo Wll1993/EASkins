@@ -17,6 +17,7 @@ namespace Arthas.Controls
             {
                 return;
             }
+            //正在运行的状态
             if (!DesignerProperties.GetIsInDesignMode(control))
             {
                 if (control.IsLoaded)

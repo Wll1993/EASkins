@@ -17,7 +17,7 @@
             </Menu>
         </StackPanel>
     </Mi:MiWindow.UserComponent>
-    <Grid Margin="0">
+    <Grid Margin="10">
         <Mi:MiTabControl Margin="0" >
             <Mi:MiTabItem Header="TabItem1">
                 <Grid Background="#FFE5E5E5"/>

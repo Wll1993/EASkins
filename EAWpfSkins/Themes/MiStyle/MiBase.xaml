@@ -2,6 +2,6 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:System="clr-namespace:System;assembly=mscorlib">
 
-    <SolidColorBrush x:Key="Brush" Color="#FFF680CF"/>
+    <SolidColorBrush x:Key="Brush" Color="#FF565656"/>
 
 </ResourceDictionary>

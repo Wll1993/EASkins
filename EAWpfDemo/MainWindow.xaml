@@ -25,6 +25,36 @@
             <Mi:MiTabItem Header="TabItem2">
                 <Grid Background="#FFE5E5E5"/>
             </Mi:MiTabItem>
+            <Mi:MiTabItem Header="TabItem2">
+                <Grid Background="#FFE5E5E5"/>
+            </Mi:MiTabItem>
+            <Mi:MiTabItem Header="TabItem2">
+                <Grid Background="#FFE5E5E5"/>
+            </Mi:MiTabItem>
+            <Mi:MiTabItem Header="TabItem2">
+                <Grid Background="#FFE5E5E5"/>
+            </Mi:MiTabItem>
+            <Mi:MiTabItem Header="TabItem2">
+                <Grid Background="#FFE5E5E5"/>
+            </Mi:MiTabItem>
+            <Mi:MiTabItem Header="TabItem2">
+                <Grid Background="#FFE5E5E5"/>
+            </Mi:MiTabItem>
+            <Mi:MiTabItem Header="TabItem2">
+                <Grid Background="#FFE5E5E5"/>
+            </Mi:MiTabItem>
+            <Mi:MiTabItem Header="TabItem2">
+                <Grid Background="#FFE5E5E5"/>
+            </Mi:MiTabItem>
+            <Mi:MiTabItem Header="TabItem2">
+                <Grid Background="#FFE5E5E5"/>
+            </Mi:MiTabItem>
+            <Mi:MiTabItem Header="TabItem2">
+                <Grid Background="#FFE5E5E5"/>
+            </Mi:MiTabItem>
+            <Mi:MiTabItem Header="TabItem10">
+                <Grid Background="#FFE5E5E5"/>
+            </Mi:MiTabItem>
         </Mi:MiTabControl>
     </Grid>
 </Mi:MiWindow>

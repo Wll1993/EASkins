@@ -516,6 +516,17 @@
                     </StackPanel>
                 </Grid>
             </Metro:MetroMenuTabItem>
+            <Metro:MetroMenuTabItem Header="header1"></Metro:MetroMenuTabItem>
+            <Metro:MetroMenuTabItem Header="header1"></Metro:MetroMenuTabItem>
+            <Metro:MetroMenuTabItem Header="header1"></Metro:MetroMenuTabItem>
+            <Metro:MetroMenuTabItem Header="header1"></Metro:MetroMenuTabItem>
+            <Metro:MetroMenuTabItem Header="header1"></Metro:MetroMenuTabItem>
+            <Metro:MetroMenuTabItem Header="header1"></Metro:MetroMenuTabItem>
+            <Metro:MetroMenuTabItem Header="header1"></Metro:MetroMenuTabItem>
+            <Metro:MetroMenuTabItem Header="header1"></Metro:MetroMenuTabItem>
+            <Metro:MetroMenuTabItem Header="header1"></Metro:MetroMenuTabItem>
+            <Metro:MetroMenuTabItem Header="header1"></Metro:MetroMenuTabItem>
+            <Metro:MetroMenuTabItem Header="header1"></Metro:MetroMenuTabItem>
         </Metro:MetroMenuTabControl>
     </Grid>
 </Metro:MetroWindow>

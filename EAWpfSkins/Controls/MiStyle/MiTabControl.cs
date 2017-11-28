@@ -1,4 +1,4 @@
-﻿using EAStyles.Utility.Element;
+﻿using EAStyles.Utilitys.Element;
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;

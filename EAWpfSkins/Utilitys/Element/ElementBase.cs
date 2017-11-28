@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Input;
 
-namespace EAStyles.Utility.Element
+namespace EAStyles.Utilitys.Element
 {
     public class ElementBase
     {

@@ -159,13 +159,13 @@
                                     </Rectangle>
                                 </Grid>
                             </Grid>
-                            <ScrollViewer Grid.Row="1" BorderBrush="White" VerticalAlignment="{TemplateBinding TabPanelVerticalAlignment}" Margin="{TemplateBinding Padding}">
+                            <Mi:MiScrollViewer Grid.Row="1" BorderBrush="White" VerticalAlignment="{TemplateBinding TabPanelVerticalAlignment}" Margin="{TemplateBinding Padding}">
                                 <Canvas x:Name="canvas" Height="{Binding ActualHeight,ElementName=tabWidth}">
                                     <Grid x:Name="tabWidth">
                                         <TabPanel x:Name="headerPanel" IsItemsHost="true"/>
                                     </Grid>
                                 </Canvas>
-                            </ScrollViewer>
+                            </Mi:MiScrollViewer>
                         </Grid>
                         <Border x:Name="contentPanel" Background="#f3f3f3" Grid.Column="1" KeyboardNavigation.DirectionalNavigation="Contained" KeyboardNavigation.TabIndex="2" KeyboardNavigation.TabNavigation="Local">
                             <ContentPresenter x:Name="content" ContentSource="SelectedContent"/>

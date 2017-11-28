@@ -12,7 +12,7 @@ namespace EAStyles.Themes
                 Visual childVisual = (Visual)VisualTreeHelper.GetChild(pVisual, i);
                 if (childVisual != null)
                 {
-                    Controls.Utility.Refresh(childVisual as FrameworkElement);
+                    Controls.ControlUtility.Refresh(childVisual as FrameworkElement);
                     Switch(childVisual);
                 }
             }

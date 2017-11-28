@@ -4,7 +4,7 @@ using System.Windows;
 
 namespace EAStyles.Controls
 {
-    public class Utility
+    public class ControlUtility
     {
         /// <summary>
         /// 刷新样式

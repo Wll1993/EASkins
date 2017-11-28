@@ -10,12 +10,12 @@ namespace EAStyles.Controls.MiStyle
     public class MiWindow : Window
     {
         public static readonly DependencyProperty IsSubWindowShowProperty = ElementBase.Property<MiWindow, bool>("IsSubWindowShowProperty", false);
-        public static readonly DependencyProperty MenuProperty = ElementBase.Property<MiWindow, object>("MenuProperty", null);
+        public static readonly DependencyProperty UserComponentProperty = ElementBase.Property<MiWindow, object>("UserComponentProperty", null);
         public static readonly new DependencyProperty BorderBrushProperty = ElementBase.Property<MiWindow, Brush>("BorderBrushProperty");
         public static readonly DependencyProperty TitleForegroundProperty = ElementBase.Property<MiWindow, Brush>("TitleForegroundProperty");
 
         public bool IsSubWindowShow { get { return (bool)GetValue(IsSubWindowShowProperty); } set { SetValue(IsSubWindowShowProperty, value); GoToState(); } }
-        public object Menu { get { return GetValue(MenuProperty); } set { SetValue(MenuProperty, value); } }
+        public object UserComponent { get { return GetValue(UserComponentProperty); } set { SetValue(UserComponentProperty, value); } }
         public new Brush BorderBrush { get { return (Brush)GetValue(BorderBrushProperty); } set { SetValue(BorderBrushProperty, value); BorderBrushChange(value); } }
         public Brush TitleForeground { get { return (Brush)GetValue(TitleForegroundProperty); } set { SetValue(TitleForegroundProperty, value); } }
 
@@ -80,7 +80,7 @@ namespace EAStyles.Controls.MiStyle
                       }
                   }
               };
-            Utility.Refresh(this);
+            ControlUtility.Refresh(this);
         }
 
         static MiWindow()

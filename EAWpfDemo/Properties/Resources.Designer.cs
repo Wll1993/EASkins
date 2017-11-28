@@ -59,5 +59,15 @@ namespace EAWpfDemo.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap if_icon_64_compass_315938 {
+            get {
+                object obj = ResourceManager.GetObject("if_icon_64_compass_315938", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

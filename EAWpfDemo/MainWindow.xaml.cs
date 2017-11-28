@@ -28,7 +28,12 @@ namespace EAWpfDemo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.BorderBrush = new System.Windows.Media.SolidColorBrush();
+            int i = 0;
+            while (i<i+1)
+            {
+                i++;
+            }
+            int a = i;
         }
     }
 }

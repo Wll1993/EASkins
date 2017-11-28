@@ -35,5 +35,10 @@ namespace EAWpfDemo
             }
             int a = i;
         }
+
+        private void menuclick(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("test");
+        }
     }
 }

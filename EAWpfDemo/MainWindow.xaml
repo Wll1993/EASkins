@@ -5,6 +5,19 @@
         xmlns:Mi="clr-namespace:EAStyles.Controls.MiStyle;assembly=EAStyles"
         Title="MainWindow" Height="336.307" Width="448.11" Icon="Resources/if_icon-64-compass_315938.png" >
     <Mi:MiWindow.Menu>
+        <Button Margin="3" Width="20" Click="menuclick"></Button>
+        <!--<Menu Height="30"  HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center">
+            <MenuItem Header="222">
+                <MenuItem Header="111111" />
+                <MenuItem Header="22222222" />
+                <MenuItem Header="33333333" />
+            </MenuItem>
+            <MenuItem Header="3333" />
+        </Menu>-->
+    </Mi:MiWindow.Menu>
+    <Grid Margin="0">
+        <Button Content="test"  Click="Button_Click" Margin="160,110,211,100">
+        </Button>
         <Menu Height="30"  HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center">
             <MenuItem Header="222">
                 <MenuItem Header="111111" />
@@ -13,10 +26,5 @@
             </MenuItem>
             <MenuItem Header="3333" />
         </Menu>
-    </Mi:MiWindow.Menu>
-    <Grid Margin="0">
-        <Button Content="test"  Click="Button_Click" Margin="160,110,211,100">
-
-        </Button>
     </Grid>
 </Mi:MiWindow>

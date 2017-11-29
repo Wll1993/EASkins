@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Local="clr-namespace:EAWpfDemo"
         xmlns:Mi="clr-namespace:EAStyles.Controls.MiStyle;assembly=EAStyles"
-        Title="MainWindow" Height="500" Width="800" Icon="Resources/if_icon-64-compass_315938.png" >
+        Title="MainWindow" Height="500" Width="800" Icon="Resources/acorn.ico" >
     <Mi:MiWindow.UserComponent>
         <!--<Button Margin="3" Width="20" Click="menuclick"></Button>-->
         <StackPanel>

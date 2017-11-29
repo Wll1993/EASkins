@@ -61,12 +61,12 @@ namespace EAWpfDemo.Properties {
         }
         
         /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap if_icon_64_compass_315938 {
+        internal static System.Drawing.Icon acorn {
             get {
-                object obj = ResourceManager.GetObject("if_icon_64_compass_315938", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("acorn", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
     }

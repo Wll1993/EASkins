@@ -75,13 +75,13 @@
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition x:Name="iconSize" Width="30"/>
+                                <ColumnDefinition x:Name="iconWidth" Width="50"/>
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="100*"/>
                                 <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>                                
                             <Grid Grid.Column="0">
-                                <Image Source="{TemplateBinding Icon}" />                                    
+                                <Image Source="{TemplateBinding Icon}" Margin="0,5,0,5"/>                                    
                             </Grid>
                             <Grid Grid.Column="1">
                                 <ContentPresenter Content="{TemplateBinding UserComponent}"/>
@@ -162,8 +162,8 @@
                             <Setter Property="Visibility" TargetName="normalButton" Value="Hidden"/>
                         </Trigger>
                         <Trigger Property="Icon" Value="{x:Null}">
-                            <Setter Property="Width" TargetName="iconSize" Value="0"/>
-                            <Setter Property="MinWidth" Value="120"/>
+                            <Setter Property="Width" TargetName="iconWidth" Value="0"/>
+                            <Setter Property="MinWidth" Value="40"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

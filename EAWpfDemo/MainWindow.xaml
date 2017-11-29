@@ -20,7 +20,9 @@
     <Grid Margin="10">
         <Mi:MiTabControl Margin="0" >
             <Mi:MiTabItem Header="TabItem1" IdxHeader="1">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <Button Margin="100"></Button>
+                </Grid>
             </Mi:MiTabItem>
             <Mi:MiTabItem Header="TabItem2" IdxHeader="2">
                 <Grid Background="#FFE5E5E5"/>

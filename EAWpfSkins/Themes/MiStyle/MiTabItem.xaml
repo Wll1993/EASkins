@@ -8,14 +8,14 @@
     <Style TargetType="{x:Type Mi:MiTabItem}">
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
-        
+        <Setter Property="MinHeight" Value="44" />
         <Setter Property="MinWidth" Value="150"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Mi:MiTabItem}">
                     <Grid Background="#00000000">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition x:Name="iconWidth" Width="Auto"/>
+                            <ColumnDefinition x:Name="headerWidth" Width="Auto"/>
                             <ColumnDefinition x:Name="contentWidth"/>
                         </Grid.ColumnDefinitions>
                         <VisualStateManager.VisualStateGroups>
@@ -25,8 +25,7 @@
                                     <Storyboard>
                                         <DoubleAnimation Storyboard.TargetName="back" Storyboard.TargetProperty="(UIElement.Opacity)" To="0.2" Duration="0:0:0.2"/>
                                         <ColorAnimation Storyboard.TargetName="title" Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)" To="#A5000000" Duration="0:0:0.2"/>
-                                        <DoubleAnimation Storyboard.TargetName="icon" Storyboard.TargetProperty="(UIElement.Opacity)" To="0" Duration="0:0:0.2"/>
-                                        <DoubleAnimation Storyboard.TargetName="iconMove" Storyboard.TargetProperty="(UIElement.Opacity)" To="1" Duration="0:0:0.2"/>
+                                        <ColorAnimation Storyboard.TargetName="idxHeader" Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)" To="#A5000000" Duration="0:0:0.2"/>
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Pressed">
@@ -35,22 +34,26 @@
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
                         <Rectangle x:Name="back" Grid.ColumnSpan="2" Fill="#f3f3f3" Opacity="0"/>
-                        <Image x:Name="iconMove" Width="24" Height="24" Margin="10,8" Source="{TemplateBinding IconMove}" Opacity="0"/>
-                        <Image x:Name="icon" Width="24" Height="24" Margin="10,8" Source="{TemplateBinding Icon}"/>
-                        <TextBlock x:Name="title" Grid.Column="2" Text="{TemplateBinding Header}" Foreground="#E5FFFFFF" Margin="0,0,15,0" VerticalAlignment="Center" HorizontalAlignment="{TemplateBinding TextHorizontalAlignment}"/>
+                        <Canvas Margin="10">
+                            <Ellipse x:Name="iconHeader"  Height="24" Width="24" Stroke="#E5FFFFFF"  Fill="{TemplateBinding BorderBrush}"/>
+                        </Canvas>
+                        <TextBlock x:Name="idxHeader" Foreground="#E5FFFFFF" Text="{TemplateBinding IdxHeader}" Height="18" Width="18" Margin="13"  TextAlignment="Center"/>
+                        <TextBlock x:Name="title" Grid.Column="2" Foreground="#E5FFFFFF" Text="{TemplateBinding Header}" Margin="0,0,13,0" VerticalAlignment="Center" HorizontalAlignment="{TemplateBinding TextHorizontalAlignment}"/>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="Selector.IsSelected" Value="True">
                             <Setter TargetName="back" Property="Opacity" Value="0.2"/>
                             <Setter TargetName="title" Property="Foreground" Value="#A5000000"/>
-                            <Setter TargetName="icon" Property="Opacity" Value="0"/>
-                            <Setter TargetName="iconMove" Property="Opacity" Value="1"/>
+                            <Setter TargetName="idxHeader" Property="Foreground" Value="#A5000000"/>
+                            <Setter TargetName="iconHeader" Property="Stroke" Value="#A5000000"/>
                         </Trigger>                        
-                        <Trigger Property="Icon" Value="{x:Null}">
-                            <Setter TargetName="iconWidth" Property="Width" Value="0"/>
+                        <Trigger Property="IdxHeader" Value="{x:Null}">
+                            <Setter TargetName="headerWidth" Property="Width" Value="0"/>
                             <Setter TargetName="title" Property="Margin" Value="15,0"/>
                         </Trigger>
-                        
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="iconHeader" Property="Stroke" Value="#A5000000"/>
+                        </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>

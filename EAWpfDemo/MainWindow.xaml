@@ -19,16 +19,16 @@
     </Mi:MiWindow.UserComponent>
     <Grid Margin="10">
         <Mi:MiTabControl Margin="0" >
-            <Mi:MiTabItem Header="TabItem1">
+            <Mi:MiTabItem Header="TabItem1" IdxHeader="1">
                 <Grid Background="#FFE5E5E5"/>
             </Mi:MiTabItem>
-            <Mi:MiTabItem Header="TabItem2">
+            <Mi:MiTabItem Header="TabItem2" IdxHeader="2">
                 <Grid Background="#FFE5E5E5"/>
             </Mi:MiTabItem>
-            <Mi:MiTabItem Header="TabItem2">
+            <Mi:MiTabItem Header="TabItem2" IdxHeader="99">
                 <Grid Background="#FFE5E5E5"/>
             </Mi:MiTabItem>
-            <Mi:MiTabItem Header="TabItem2">
+            <Mi:MiTabItem Header="TabItem2" IdxHeader="-">
                 <Grid Background="#FFE5E5E5"/>
             </Mi:MiTabItem>
             <Mi:MiTabItem Header="TabItem2">

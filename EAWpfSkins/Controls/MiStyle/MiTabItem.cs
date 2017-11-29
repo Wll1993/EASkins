@@ -7,12 +7,21 @@ namespace EAStyles.Controls.MiStyle
 {
     public class MiTabItem : TabItem
     {
-        public static readonly DependencyProperty IconProperty = ElementBase.Property<MiTabItem, ImageSource>("IconProperty", null);
-        public static readonly DependencyProperty IconMoveProperty = ElementBase.Property<MiTabItem, ImageSource>("IconMoveProperty", null);
+        public static readonly DependencyProperty IdxHeaderProperty = ElementBase.Property<MiTabItem, string>("IdxHeaderProperty", null);
         public static readonly DependencyProperty TextHorizontalAlignmentProperty = ElementBase.Property<MiTabItem, HorizontalAlignment>("TextHorizontalAlignmentProperty", HorizontalAlignment.Right);
 
-        public ImageSource Icon { get { return (ImageSource)GetValue(IconProperty); } set { SetValue(IconProperty, value); } }
-        public ImageSource IconMove { get { return (ImageSource)GetValue(IconMoveProperty); } set { SetValue(IconMoveProperty, value); } }
+        public string IdxHeader
+        {
+            get
+            {
+                return (string)GetValue(IdxHeaderProperty);
+            }
+            set
+            {
+                SetValue(IdxHeaderProperty, value);
+            }
+        }
+       
         public HorizontalAlignment TextHorizontalAlignment { get { return (HorizontalAlignment)GetValue(TextHorizontalAlignmentProperty); } set { SetValue(TextHorizontalAlignmentProperty, value); } }
 
         static MiTabItem()

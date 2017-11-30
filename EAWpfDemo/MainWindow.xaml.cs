@@ -1,4 +1,4 @@
-﻿using EASkins.EAStyles.Controls.MiStyle;
+﻿using EAStyles.Controls.MiStyle;
 using System;
 using System.Collections.Generic;
 using System.Linq;

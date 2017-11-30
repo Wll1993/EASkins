@@ -100,9 +100,9 @@
     <Resource Include="Resources\acorn.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EASkins\EASkins.csproj">
-      <Project>{42e7ae2f-91e7-4031-bab5-7e74373b1d11}</Project>
-      <Name>EASkins</Name>
+    <ProjectReference Include="..\EAWpfSkins\EAStyles.csproj">
+      <Project>{8f778f88-6758-45be-b79b-aec5844b3e80}</Project>
+      <Name>EAStyles</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -12,7 +12,7 @@ using System.Drawing.Drawing2D;
 using System.Text;
 using System.Windows.Forms;
 
-namespace EASkins
+namespace EAStyles
 {
     #region ARoundRectangle
 

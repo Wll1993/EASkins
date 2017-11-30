@@ -1,10 +1,10 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiWindow.xaml"/>
-        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiTabControl.xaml"/>
-        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiTabItem.xaml"/>
-        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiScrollViewer.xaml"/>
+        <ResourceDictionary Source="/EASkins;component/EAStyles/Themes/MiStyle/MiWindow.xaml"/>
+        <ResourceDictionary Source="/EASkins;component/EAStyles/Themes/MiStyle/MiTabControl.xaml"/>
+        <ResourceDictionary Source="/EASkins;component/EAStyles/Themes/MiStyle/MiTabItem.xaml"/>
+        <ResourceDictionary Source="/EASkins;component/EAStyles/Themes/MiStyle/MiScrollViewer.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
 

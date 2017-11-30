@@ -4,7 +4,7 @@
                     xmlns:Mi="clr-namespace:EASkins.EAStyles.Controls.MiStyle"
                     x:Class="EASkins.EAStyles.Themes.MiStyle.MiWindow">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiBase.xaml"/>
+        <ResourceDictionary Source="/EASkins;component/EAStyles/Themes/MiStyle/MiBase.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
     <Style x:Key="buttonStyle" TargetType="{x:Type Button}">

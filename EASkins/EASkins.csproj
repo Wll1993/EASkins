@@ -51,16 +51,6 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EAStyles\Controls\ControlUtility.cs" />
-    <Compile Include="EAStyles\Controls\MiStyle\MiScrollViewer.cs" />
-    <Compile Include="EAStyles\Controls\MiStyle\MiTabControl.cs" />
-    <Compile Include="EAStyles\Controls\MiStyle\MiTabItem.cs" />
-    <Compile Include="EAStyles\Controls\MiStyle\MiWindow.cs" />
-    <Compile Include="EAStyles\Themes\MiStyle\MiWindow.xaml.cs">
-      <DependentUpon>MiWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EAStyles\Themes\Theme.cs" />
-    <Compile Include="EAStyles\Utilitys\Element\ElementBase.cs" />
     <Compile Include="Material\Animations\AnimationDirection.cs" />
     <Compile Include="Material\Animations\AnimationManager.cs" />
     <Compile Include="Material\Animations\Animations.cs" />
@@ -125,36 +115,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="EAStyles\Themes\Generic.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="EAStyles\Themes\MiStyle\MiBase.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="EAStyles\Themes\MiStyle\MiScrollViewer.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="EAStyles\Themes\MiStyle\MiStyle.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="EAStyles\Themes\MiStyle\MiTabControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="EAStyles\Themes\MiStyle\MiTabItem.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="EAStyles\Themes\MiStyle\MiWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

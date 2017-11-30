@@ -61,9 +61,6 @@
     <Compile Include="Themes\MiStyle\MiWindow.xaml.cs">
       <DependentUpon>MiWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Themes\MiStyle\MiFormPage.xaml.cs">
-      <DependentUpon>MiFormPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Themes\Theme.cs" />
     <Compile Include="Utilitys\Element\ElementBase.cs" />
     <Compile Include="WFControls\AmiControls.cs">

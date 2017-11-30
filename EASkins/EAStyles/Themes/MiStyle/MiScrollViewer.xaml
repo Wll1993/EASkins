@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:Mi="clr-namespace:EASkins.EAStyles.Controls.MiStyle">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiBase.xaml"/>
+        <ResourceDictionary Source="/EASkins;component/EAStyles/Themes/MiStyle/MiBase.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
     <Style x:Key="repeatButtonStyle" TargetType="{x:Type RepeatButton}">

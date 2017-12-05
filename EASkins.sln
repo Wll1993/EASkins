@@ -11,9 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arthas", "Arthas\Arthas.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arthas.Demo", "Arthas.Demo\Arthas.Demo.csproj", "{20827429-E998-4EA3-BB34-DB49CBD0FCC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAStyles", "EAWpfSkins\EAStyles.csproj", "{8F778F88-6758-45BE-B79B-AEC5844B3E80}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAWpfDemo", "EAWpfDemo\EAWpfDemo.csproj", "{C378711B-20A0-4DBD-88AF-71B449628F88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAStyles", "EAStyles\EAStyles.csproj", "{8F778F88-6758-45BE-B79B-AEC5844B3E80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,18 +49,18 @@ Global
 		{20827429-E998-4EA3-BB34-DB49CBD0FCC0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{20827429-E998-4EA3-BB34-DB49CBD0FCC0}.Release|x86.ActiveCfg = Release|x86
 		{20827429-E998-4EA3-BB34-DB49CBD0FCC0}.Release|x86.Build.0 = Release|x86
-		{8F778F88-6758-45BE-B79B-AEC5844B3E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F778F88-6758-45BE-B79B-AEC5844B3E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F778F88-6758-45BE-B79B-AEC5844B3E80}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8F778F88-6758-45BE-B79B-AEC5844B3E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F778F88-6758-45BE-B79B-AEC5844B3E80}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8F778F88-6758-45BE-B79B-AEC5844B3E80}.Release|x86.ActiveCfg = Release|Any CPU
 		{C378711B-20A0-4DBD-88AF-71B449628F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C378711B-20A0-4DBD-88AF-71B449628F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C378711B-20A0-4DBD-88AF-71B449628F88}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{C378711B-20A0-4DBD-88AF-71B449628F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C378711B-20A0-4DBD-88AF-71B449628F88}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C378711B-20A0-4DBD-88AF-71B449628F88}.Release|x86.ActiveCfg = Release|Any CPU
+		{8F778F88-6758-45BE-B79B-AEC5844B3E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F778F88-6758-45BE-B79B-AEC5844B3E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F778F88-6758-45BE-B79B-AEC5844B3E80}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8F778F88-6758-45BE-B79B-AEC5844B3E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F778F88-6758-45BE-B79B-AEC5844B3E80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F778F88-6758-45BE-B79B-AEC5844B3E80}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

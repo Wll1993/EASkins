@@ -51,7 +51,6 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\MiStyle\MiFormPage.cs" />
     <Compile Include="Controls\MiStyle\MiScrollViewer.cs" />
     <Compile Include="Controls\MiStyle\MiTabControl.cs" />
     <Compile Include="Controls\MiStyle\MiTabItem.cs" />
@@ -96,10 +95,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Themes\Generic.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Themes\MiStyle\MiFormPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

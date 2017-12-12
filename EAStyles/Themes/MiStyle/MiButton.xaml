@@ -5,13 +5,13 @@
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiBase.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
-    <Style x:Key="buttonStyle" TargetType="{x:Type Mi:MiButton}">
-        <!--<Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+    <!--<Style x:Key="buttonStyle" TargetType="{x:Type Mi:MiButton}">
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="Background" Value="#FF124689" />
         <Setter Property="Width" Value="40"/>
-        <Setter Property="Height" Value="32"/>-->
-        <!--<Setter Property="Template">
+        <Setter Property="Height" Value="32"/>
+        <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Mi:MiButton}">
                     <Grid>
@@ -40,6 +40,6 @@
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
-        </Setter>-->
-    </Style>
+        </Setter>
+    </Style>-->
 </ResourceDictionary>

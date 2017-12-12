@@ -17,27 +17,12 @@
             </Menu>
         </StackPanel>
     </Mi:MiWindow.UserComponent>
-    <Window.Resources>
-        <Style x:Key="buttonStyle1" TargetType="{x:Type Button}">
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                        <Setter Property="BitmapEffect">
-                            <Setter.Value>
-                                <OuterGlowBitmapEffect GlowSize=
-                                    "20" Noise=".3" GlowColor="Red">
-                                </OuterGlowBitmapEffect>
-                            </Setter.Value>
-                        </Setter>
-                    </Trigger>
-                 </Style.Triggers>
-              </Style>
-            </Window.Resources>
-
+    
      <Grid Margin="10">
         <Mi:MiTabControl Margin="0" >
             <Mi:MiTabItem Header="TabItem1" IdxHeader="1">
-                <Grid Background="#FFE5E5E5">
-                    <Button Margin="100" Style="{StaticResource buttonStyle1}"></Button>
+                <Grid>
+                    <Mi:MiButton Background="Red"  Content="test" Margin="31,32,492.2,368.4" Width="100" Height="50"></Mi:MiButton>
                 </Grid>
             </Mi:MiTabItem>
             <Mi:MiTabItem Header="TabItem2" IdxHeader="2">

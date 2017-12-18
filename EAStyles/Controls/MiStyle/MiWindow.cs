@@ -13,11 +13,13 @@ namespace EAStyles.Controls.MiStyle
         public static readonly DependencyProperty UserComponentProperty = ElementBase.Property<MiWindow, object>("UserComponentProperty", null);
         public static readonly new DependencyProperty BorderBrushProperty = ElementBase.Property<MiWindow, Brush>("BorderBrushProperty");
         public static readonly DependencyProperty TitleForegroundProperty = ElementBase.Property<MiWindow, Brush>("TitleForegroundProperty");
+        public static readonly DependencyProperty TitleLocationProperty = ElementBase.Property<MiWindow, HorizontalAlignment>("TitleLocationProperty", HorizontalAlignment.Center);
 
         public bool IsSubWindowShow { get { return (bool)GetValue(IsSubWindowShowProperty); } set { SetValue(IsSubWindowShowProperty, value); GoToState(); } }
         public object UserComponent { get { return GetValue(UserComponentProperty); } set { SetValue(UserComponentProperty, value); } }
         public new Brush BorderBrush { get { return (Brush)GetValue(BorderBrushProperty); } set { SetValue(BorderBrushProperty, value); BorderBrushChange(value); } }
         public Brush TitleForeground { get { return (Brush)GetValue(TitleForegroundProperty); } set { SetValue(TitleForegroundProperty, value); } }
+        public HorizontalAlignment TitleLocation { get { return (HorizontalAlignment)GetValue(TitleLocationProperty); } set { SetValue(TitleLocationProperty, value); } }
 
         void BorderBrushChange(Brush brush)
         {
@@ -88,4 +90,5 @@ namespace EAStyles.Controls.MiStyle
             ElementBase.DefaultStyle<MiWindow>(DefaultStyleKeyProperty);
         }
     }
+    
 }

@@ -66,12 +66,9 @@
     </Compile>
     <Compile Include="Themes\Theme.cs" />
     <Compile Include="Utilitys\Element\ElementBase.cs" />
-    <Compile Include="WFControls\AmiControls.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="WFControls\EmiControls.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Utilitys\Element\NotificationElement.cs" />
+    <Compile Include="WFControls\AmiControls.cs" />
+    <Compile Include="WFControls\EmiControls.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Themes\MiStyle\MiButton.xaml">

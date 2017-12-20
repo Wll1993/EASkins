@@ -60,6 +60,7 @@
     <Compile Include="Controls\MiStyle\MiDataGrid.cs" />
     <Compile Include="Controls\MiStyle\MiListBox.cs" />
     <Compile Include="Controls\MiStyle\MiRadioButton.cs" />
+    <Compile Include="Controls\MiStyle\MiRichTextBox.cs" />
     <Compile Include="Controls\MiStyle\MiScrollViewer.cs" />
     <Compile Include="Controls\MiStyle\MiTabControl.cs" />
     <Compile Include="Controls\MiStyle\MiTabItem.cs" />

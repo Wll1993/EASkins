@@ -29,7 +29,9 @@
                 <Grid Background="#FFE5E5E5"/>
             </Mi:MiTabItem>
             <Mi:MiTabItem Header="TabItem2" IdxHeader="99">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <Mi:MiToggleButton Margin="-10,211,10.2,215.4" ></Mi:MiToggleButton>
+                 </Grid>
             </Mi:MiTabItem>
             <Mi:MiTabItem Header="TabItem2" IdxHeader="-">
                 <Grid Background="#FFE5E5E5"/>

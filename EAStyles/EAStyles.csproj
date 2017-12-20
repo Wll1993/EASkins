@@ -65,6 +65,7 @@
     <Compile Include="Controls\MiStyle\MiTabItem.cs" />
     <Compile Include="Controls\MiStyle\MiTextBlock.cs" />
     <Compile Include="Controls\MiStyle\MiTextBox.cs" />
+    <Compile Include="Controls\MiStyle\MiToggleButton.cs" />
     <Compile Include="Controls\MiStyle\MiWindow.cs" />
     <Compile Include="Controls\ControlUtility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,6 +98,10 @@
     <Page Include="Themes\MiStyle\MiStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\MiStyle\MiToggleButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Themes\MiStyle\MiWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

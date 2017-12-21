@@ -3201,7 +3201,7 @@ namespace EAStyles.WFControls
                 _Shape.AddArc(7, 7, 7, 7, 0, 90);
                 _Shape.AddArc(0, 7, 7, 7, 90, 90);
                 _Shape.CloseAllFigures();
-                Height = 15;
+                //Height = 15;
             }
 
             Invalidate();

@@ -35,6 +35,14 @@ namespace EAStyles.Controls
             Window mw = Window.GetWindow(control) is MiWindow ? Window.GetWindow(control) as MiWindow : null;
             if (mw != null)
             {
+                if(control is MiWindow)
+                {
+                    MiWindow window = control as MiWindow;
+                    if(window.Owner!=null && window.Owner is MiWindow)
+                    {
+                        window.BorderBrush = window.Owner.BorderBrush.Clone();
+                    }
+                }
                 if (control is MiTabControl)
                 {
                     (control as MiTabControl).BorderBrush = mw.BorderBrush.Clone();
@@ -43,54 +51,54 @@ namespace EAStyles.Controls
                 {
                     (control as MiTabItem).Background = mw.BorderBrush.Clone();
                 }
-                if (control is MiButton)
+                if (control is MiTitleButton)
                 {
-                    (control as MiButton).Background = mw.BorderBrush.Clone();
+                    (control as MiTitleButton).Background = mw.BorderBrush.Clone();
                 }
                 if (control is MiToggleButton)
                 {
                     (control as MiToggleButton).Background = mw.BorderBrush.Clone();
                 }
-                //if (control is DMTitleMenu)
+                //if (control is MiTitleMenu)
                 //{
-                //    (control as DMTitleMenu).Background = mw.BorderBrush;
+                //    (control as MiTitleMenu).Background = mw.BorderBrush;
                 //}
-                //if (control is DMTitleMenuItem)
+                //if (control is MiTitleMenuItem)
                 //{
-                //    (control as DMTitleMenuItem).Background = mw.BorderBrush;
+                //    (control as MiTitleMenuItem).Background = mw.BorderBrush;
                 //}
-                //if (control is DMMenuItem)
+                //if (control is MiMenuItem)
                 //{
-                //    (control as DMMenuItem).Background = mw.BorderBrush;
+                //    (control as MiMenuItem).Background = mw.BorderBrush;
                 //}
-                //if (control is DMContextMenu)
+                //if (control is MiContextMenu)
                 //{
-                //    (control as DMContextMenu).Background = mw.BorderBrush;
+                //    (control as MiContextMenu).Background = mw.BorderBrush;
                 //}
-                //if (control is DMTextBox)
+                //if (control is MiTextBox)
                 //{
-                //    (control as DMTextBox).BorderBrush = mw.BorderBrush;
+                //    (control as MiTextBox).BorderBrush = mw.BorderBrush;
                 //}
-                //if (control is DMButton)
+                //if (control is MiButton)
                 //{
-                //    (control as DMButton).Background = mw.BorderBrush;
+                //    (control as MiButton).Background = mw.BorderBrush;
                 //}
-                //if (control is DMMenuTabControl)
+                //if (control is MiMenuTabControl)
                 //{
-                //    (control as DMMenuTabControl).BorderBrush = mw.BorderBrush;
+                //    (control as MiMenuTabControl).BorderBrush = mw.BorderBrush;
                 //}
-                //if (control is DMRichTextBox)
+                //if (control is MiRichTextBox)
                 //{
-                //    (control as DMRichTextBox).MouseMoveThemeBorderBrush = mw.BorderBrush;
+                //    (control as MiRichTextBox).MouseMoveThemeBorderBrush = mw.BorderBrush;
                 //}
-                //if (control is DMCanvasGrid)
+                //if (control is MiCanvasGrid)
                 //{
-                //    if ((control as DMCanvasGrid).IsApplyTheme)
-                //        (control as DMCanvasGrid).Background = new RgbaColor(mw.BorderBrush).OpaqueSolidColorBrush;
+                //    if ((control as MiCanvasGrid).IsApplyTheme)
+                //        (control as MiCanvasGrid).Background = new RgbaColor(mw.BorderBrush).OpaqueSolidColorBrush;
                 //}
-                //if (control is DMColorPicker)
+                //if (control is MiColorPicker)
                 //{
-                //    (control as DMColorPicker).BorderBrush = mw.BorderBrush;
+                //    (control as MiColorPicker).BorderBrush = mw.BorderBrush;
                 //}
             }
         }

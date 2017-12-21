@@ -54,6 +54,7 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\MiStyle\MiTitleButton.cs" />
     <Compile Include="Controls\MiStyle\MiButton.cs" />
     <Compile Include="Controls\MiStyle\MiCheckBox.cs" />
     <Compile Include="Controls\MiStyle\MiComboBox.cs" />
@@ -80,7 +81,7 @@
     <Compile Include="WFControls\EmiControls.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Themes\MiStyle\MiButton.xaml">
+    <Page Include="Themes\MiStyle\MiTitleButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

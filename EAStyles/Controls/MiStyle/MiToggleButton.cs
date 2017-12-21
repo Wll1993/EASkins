@@ -21,6 +21,7 @@ namespace EAStyles.Controls.MiStyle
 
         public MiToggleButton()
         {
+            EAStyles.Controls.ControlUtility.Refresh(this);
             Loaded += delegate { ElementBase.GoToState(this, (bool)IsChecked ? "OpenLoaded" : "CloseLoaded"); };
         }
 

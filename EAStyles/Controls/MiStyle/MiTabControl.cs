@@ -43,7 +43,7 @@ namespace EAStyles.Controls.MiStyle
             SelectionChanged += delegate (object sender, SelectionChangedEventArgs e) { if (e.Source is MiTabControl) { SelectionState(); } };
             CommandBindings.Add(new CommandBinding(IconModeClickCommand, delegate { IconMode = !IconMode; GoToState();}));
 
-            EAStyles.Controls.ControlUtility.Refresh(this);
+            ControlUtility.Refresh(this);
         }
 
         static MiTabControl()

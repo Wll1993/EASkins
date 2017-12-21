@@ -14,18 +14,18 @@ namespace EAStyles.Controls.MiStyle
 
     public class MiButton : ButtonBase
     {
-        public static readonly DependencyProperty MiButtonStyleProperty = ElementBase.Property<MiButton, ButtonStyle>("MiButtonStyleProperty", ButtonStyle.None);
+        public static readonly DependencyProperty MiTitleButtonStyleProperty = ElementBase.Property<MiTitleButton, ButtonStyle>("MiTitleButtonStyleProperty", ButtonStyle.None);
 
-        public ButtonStyle MiButtonStyle { get { return (ButtonStyle)GetValue(MiButtonStyleProperty); } set { SetValue(MiButtonStyleProperty, value); } }
+        public ButtonStyle MiTitleButtonStyle { get { return (ButtonStyle)GetValue(MiTitleButtonStyleProperty); } set { SetValue(MiTitleButtonStyleProperty, value); } }
 
         public MiButton()
         {
-            EAStyles.Controls.ControlUtility.Refresh(this);
+            //EAStyles.Controls.ControlUtility.Refresh(this);
         }
 
         static MiButton()
         {
-            ElementBase.DefaultStyle<MiButton>(DefaultStyleKeyProperty);
+            //ElementBase.DefaultStyle<MiTitleButton>(DefaultStyleKeyProperty);
         }
 
         public enum ButtonStyle

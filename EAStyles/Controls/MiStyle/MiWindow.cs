@@ -11,7 +11,7 @@ namespace EAStyles.Controls.MiStyle
     {
         public static readonly DependencyProperty IsSubWindowShowProperty = ElementBase.Property<MiWindow, bool>("IsSubWindowShowProperty", false);
         public static readonly DependencyProperty UserComponentProperty = ElementBase.Property<MiWindow, object>("UserComponentProperty", null);
-        public static readonly new DependencyProperty BorderBrushProperty = ElementBase.Property<MiWindow, Brush>("BorderBrushProperty");
+        //public new static readonly DependencyProperty BorderBrushProperty = ElementBase.Property<MiWindow, Brush>("BorderBrushProperty");
         public static readonly DependencyProperty TitleForegroundProperty = ElementBase.Property<MiWindow, Brush>("TitleForegroundProperty");
         public static readonly DependencyProperty TitleLocationProperty = ElementBase.Property<MiWindow, HorizontalAlignment>("TitleLocationProperty", HorizontalAlignment.Center);
 

@@ -35,6 +35,22 @@ namespace EAStyles.Controls
             Window mw = Window.GetWindow(control) is MiWindow ? Window.GetWindow(control) as MiWindow : null;
             if (mw != null)
             {
+                if (control is MiTabControl)
+                {
+                    (control as MiTabControl).BorderBrush = mw.BorderBrush.Clone();
+                }
+                if (control is MiTabItem)
+                {
+                    (control as MiTabItem).Background = mw.BorderBrush.Clone();
+                }
+                if (control is MiButton)
+                {
+                    (control as MiButton).Background = mw.BorderBrush.Clone();
+                }
+                if (control is MiToggleButton)
+                {
+                    (control as MiToggleButton).Background = mw.BorderBrush.Clone();
+                }
                 //if (control is DMTitleMenu)
                 //{
                 //    (control as DMTitleMenu).Background = mw.BorderBrush;

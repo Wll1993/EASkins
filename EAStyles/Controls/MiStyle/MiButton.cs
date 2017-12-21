@@ -10,12 +10,7 @@ using System.Windows.Controls.Primitives;
 
 namespace EAStyles.Controls.MiStyle
 {
-    public enum ButtonStyle
-    {
-        None,
-        StyleOne,
-        StyleTwo
-    }
+    
 
     public class MiButton : ButtonBase
     {
@@ -31,6 +26,13 @@ namespace EAStyles.Controls.MiStyle
         static MiButton()
         {
             ElementBase.DefaultStyle<MiButton>(DefaultStyleKeyProperty);
+        }
+
+        public enum ButtonStyle
+        {
+            None,
+            StyleOne,
+            StyleTwo
         }
     }
 }

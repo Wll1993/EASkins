@@ -75,6 +75,7 @@
       <DependentUpon>MiWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Themes\Theme.cs" />
+    <Compile Include="Utilitys\Converter\StringToVisibility.cs" />
     <Compile Include="Utilitys\Element\ElementBase.cs" />
     <Compile Include="Utilitys\Element\NotificationElement.cs" />
     <Compile Include="Utilitys\Media\HsbaColor.cs" />

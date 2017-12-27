@@ -7,7 +7,7 @@ using System.Windows.Input;
 using System.Windows.Markup;
 using System.Windows.Media;
 
-namespace EAStyles.Utilitys.Element
+namespace EAStyles.Utilitys
 {
     public class NotificationElement : FrameworkElement
     {

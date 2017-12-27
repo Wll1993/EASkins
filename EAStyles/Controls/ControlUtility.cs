@@ -59,6 +59,14 @@ namespace EAStyles.Controls
                 {
                     (control as MiToggleButton).Background = mw.BorderBrush.Clone();
                 }
+                if (control is MiRichTextBox)
+                {
+                    (control as MiRichTextBox).MouseMoveThemeBorderBrush = mw.BorderBrush;
+                }
+                if (control is MiTextBox)
+                {
+                    (control as MiTextBox).BorderBrush = mw.BorderBrush;
+                }
                 //if (control is MiTitleMenu)
                 //{
                 //    (control as MiTitleMenu).Background = mw.BorderBrush;
@@ -75,10 +83,7 @@ namespace EAStyles.Controls
                 //{
                 //    (control as MiContextMenu).Background = mw.BorderBrush;
                 //}
-                //if (control is MiTextBox)
-                //{
-                //    (control as MiTextBox).BorderBrush = mw.BorderBrush;
-                //}
+
                 //if (control is MiButton)
                 //{
                 //    (control as MiButton).Background = mw.BorderBrush;
@@ -87,10 +92,7 @@ namespace EAStyles.Controls
                 //{
                 //    (control as MiMenuTabControl).BorderBrush = mw.BorderBrush;
                 //}
-                //if (control is MiRichTextBox)
-                //{
-                //    (control as MiRichTextBox).MouseMoveThemeBorderBrush = mw.BorderBrush;
-                //}
+
                 //if (control is MiCanvasGrid)
                 //{
                 //    if ((control as MiCanvasGrid).IsApplyTheme)

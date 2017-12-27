@@ -23,6 +23,7 @@
             <Mi:MiTabItem Header="TabItem1" IdxHeader="1">
                 <Grid>
                     <Mi:MiButton Background="Blue"  Content="test" Margin="31,32,492.2,368.4" Width="100" Height="50"></Mi:MiButton>
+                    <Mi:MiTextBox></Mi:MiTextBox>
                 </Grid>
             </Mi:MiTabItem>
             <Mi:MiTabItem Header="TabItem2" IdxHeader="2">

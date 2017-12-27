@@ -1,6 +1,6 @@
 ﻿using System.Windows.Media;
 
-namespace EAStyles.Utilitys.Media
+namespace EAStyles.Utilitys
 {
     public class HsbaColor
     {

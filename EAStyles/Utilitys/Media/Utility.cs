@@ -5,7 +5,7 @@ using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media.Imaging;
 
-namespace EAStyles.Utilitys.Media
+namespace EAStyles.Utilitys
 {
     /// <summary>
     /// 实用工具

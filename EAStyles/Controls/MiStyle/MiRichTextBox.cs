@@ -1,5 +1,4 @@
-﻿using EAStyles.Utilitys.Element;
-using EAStyles.Utilitys.Media;
+﻿using EAStyles.Utilitys;
 using System;
 using System.Text;
 using System.Windows;

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 
-namespace EAStyles.Utilitys.Media
+namespace EAStyles.Utilitys
 {
     public class RgbaColor
     {

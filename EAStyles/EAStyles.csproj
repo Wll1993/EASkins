@@ -54,6 +54,7 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\MiStyle\MiDateTimePicker.cs" />
     <Compile Include="Controls\MiStyle\MiTitleButton.cs" />
     <Compile Include="Controls\MiStyle\MiButton.cs" />
     <Compile Include="Controls\MiStyle\MiCheckBox.cs" />
@@ -85,6 +86,10 @@
     <Compile Include="WFControls\EmiControls.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Themes\MiStyle\MiComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Themes\MiStyle\MiRichTextBox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

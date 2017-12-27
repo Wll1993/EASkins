@@ -53,7 +53,7 @@
         <Setter Property="TitleForeground" Value="#A5000000"/>
         <Setter Property="TitleMinWidth" Value="80"/>
         <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="CornerRadius" Value="2"/>
+        <Setter Property="CornerRadius" Value="0"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Mi:MiTextBox}">

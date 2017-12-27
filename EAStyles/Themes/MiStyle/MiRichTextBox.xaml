@@ -11,7 +11,7 @@
         <Setter Property="SnapsToDevicePixels" Value="True"/>
 
         <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="CornerRadius" Value="2"/>
+        <Setter Property="CornerRadius" Value="0"/>
         <Setter Property="Background" Value="#ffffff"/>
         <!--
         <Setter Property="CaretBrush" Value="{StaticResource Brush}"/>

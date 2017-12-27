@@ -62,7 +62,7 @@
         
         <Setter Property="Shell:WindowChrome.WindowChrome">
             <Setter.Value>
-                <Shell:WindowChrome  CaptionHeight="30" CornerRadius="4" GlassFrameThickness="-1" ResizeBorderThickness="4" UseAeroCaptionButtons="False" NonClientFrameEdges="None"/>
+                <Shell:WindowChrome  CaptionHeight="30" CornerRadius="0" GlassFrameThickness="-1" ResizeBorderThickness="4" UseAeroCaptionButtons="False" NonClientFrameEdges="None"/>
             </Setter.Value>
         </Setter>
         <Setter Property="Template">

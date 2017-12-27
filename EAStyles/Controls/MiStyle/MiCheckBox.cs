@@ -9,5 +9,9 @@ namespace EAStyles.Controls.MiStyle
 {
     public class MiCheckBox:CheckBox
     {
+        public MiCheckBox()
+        {
+            ControlUtility.Refresh(this);
+        }
     }
 }

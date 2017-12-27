@@ -61,11 +61,15 @@ namespace EAStyles.Controls
                 }
                 if (control is MiRichTextBox)
                 {
-                    (control as MiRichTextBox).MouseMoveThemeBorderBrush = mw.BorderBrush;
+                    (control as MiRichTextBox).MouseMoveThemeBorderBrush = mw.BorderBrush.Clone();
                 }
                 if (control is MiTextBox)
                 {
-                    (control as MiTextBox).BorderBrush = mw.BorderBrush;
+                    (control as MiTextBox).BorderBrush = mw.BorderBrush.Clone();
+                }
+                if (control is MiComboBox)
+                {
+                    (control as MiComboBox).BorderBrush = mw.BorderBrush.Clone();
                 }
                 //if (control is MiTitleMenu)
                 //{

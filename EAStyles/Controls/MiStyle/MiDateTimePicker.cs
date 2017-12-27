@@ -157,7 +157,7 @@ namespace EAStyles.Controls.MiStyle
             this._popUp.Child = this._calendar;
             this._checkBox.Checked += new RoutedEventHandler(_checkBox_Checked);
             this._checkBox.Unchecked += new RoutedEventHandler(_checkBox_Checked);
-            this.MouseWheel += new System.Windows.Input.MouseWheelEventHandler(Dameer_MouseWheel);
+            this.MouseWheel += new System.Windows.Input.MouseWheelEventHandler(MiDateTimePicker_MouseWheel);
             this.Focusable = false;
             this._textBox.Cursor = System.Windows.Input.Cursors.Arrow;
             this._textBox.AllowDrop = false;
@@ -182,7 +182,7 @@ namespace EAStyles.Controls.MiStyle
             this._textBox.IsEnabled = this.Checked;
         }
 
-        void Dameer_MouseWheel(object sender, System.Windows.Input.MouseWheelEventArgs e)
+        void MiDateTimePicker_MouseWheel(object sender, System.Windows.Input.MouseWheelEventArgs e)
         {            
             this._blockManager.Change(((e.Delta < 0) ? -1 : 1), true);
         }
@@ -229,12 +229,12 @@ namespace EAStyles.Controls.MiStyle
             return (ControlTemplate)XamlReader.Parse(@"
         <ControlTemplate  xmlns=""http://schemas.microsoft.com/winfx/2006/xaml/presentation""
                           xmlns:x=""http://schemas.microsoft.com/winfx/2006/xaml"">
-            <Border BorderBrush=""Black"" BorderThickness=""0"" CornerRadius=""1"">
-                <StackPanel Orientation=""Horizontal"" VerticalAlignment=""Center"" HorizontalAlignment=""Left"" Background=""White"">
+            <Border BorderThickness=""0"" CornerRadius=""0"" >
+                <Grid Margin=""0"">
                     <CheckBox Name=""checkBox"" VerticalAlignment=""Center"" />
-                    <TextBox Name=""textBox"" BorderThickness=""0""/>
-                    <TextBlock Name=""textBlock"" Text=""▼""/>
-                </StackPanel>
+                    <TextBox Name=""textBox"" BorderThickness=""0"" VerticalAlignment=""Center"" VerticalContentAlignment=""Center"" Height=""26""/>
+                    <TextBlock Name=""textBlock"" Text=""..."" VerticalAlignment=""Center"" HorizontalAlignment=""Right"" Height=""26""/>
+                </Grid>
             </Border>
         </ControlTemplate>");
         }
@@ -269,7 +269,7 @@ namespace EAStyles.Controls.MiStyle
         {            
             this._dtPicker = dtPicker;
             this._format = format;
-            this._dtPicker.LostFocus += new RoutedEventHandler(_dameer_LostFocus);
+            this._dtPicker.LostFocus += new RoutedEventHandler(_MiDateTimePicker_LostFocus);
             this._blocks = new List<Block>();
             this.InitBlocks();
         }
@@ -285,7 +285,6 @@ namespace EAStyles.Controls.MiStyle
 
         internal void Render()
         {
-            //Debug.WriteLine("BlockManager.Render");
             int accum = 0;
             StringBuilder sb = new StringBuilder(this._format);
             foreach (Block b in this._blocks)
@@ -307,14 +306,12 @@ namespace EAStyles.Controls.MiStyle
 
         internal void ChangeValue(int p)
         {
-            //Debug.WriteLine("ChangeValue");
             this._selectedBlock.Proposed = p;
             this.Change(this._selectedBlock.Proposed, false);
         }
 
         internal void Change(int value, bool upDown)
         {
-            //Debug.WriteLine("Change");
             this._dtPicker.Value = this._selectedBlock.Change(this._dtPicker.InternalValue, value, upDown);
             if (upDown)
                 this.OnNeglectProposed();
@@ -333,14 +330,13 @@ namespace EAStyles.Controls.MiStyle
                 this.Select(this._selectedIndex - 1);
         }
 
-        private void _dameer_LostFocus(object sender, RoutedEventArgs e)
+        private void _MiDateTimePicker_LostFocus(object sender, RoutedEventArgs e)
         {
             this.OnNeglectProposed();
         }
 
         protected virtual void OnNeglectProposed()
         {
-            //Debug.WriteLine("OnNeglectProposed");
             EventHandler temp = this.NeglectProposed;
             if (temp != null)
             {
@@ -360,14 +356,12 @@ namespace EAStyles.Controls.MiStyle
 
         private void Select(int blockIndex)
         {
-            //Debug.WriteLine("Select(int blockIndex)");
             if (this._blocks.Count > blockIndex)
                 this.Select(this._blocks[blockIndex]);
         }
 
         private void Select(Block block)
         {
-            //Debug.WriteLine("Select(Block block)");
             if (!(this._selectedBlock == block))
                 this.OnNeglectProposed();
             this._selectedIndex = this._blocks.IndexOf(block);
@@ -386,12 +380,10 @@ namespace EAStyles.Controls.MiStyle
         {
             get
             {
-                //Debug.WriteLine("Length Get");
                 return this._length;
             }
             set
             {
-                //Debug.WriteLine("Length Set");
                 this._length = value;
             }
         }
@@ -511,7 +503,6 @@ namespace EAStyles.Controls.MiStyle
 
         internal void Render(ref int accum, StringBuilder sb)
         {
-            //Debug.WriteLine("Block.Render");
             this.Index += accum;
 
             string f = this._blockManager._dtPicker.InternalValue.ToString(this.Pattern + ",").TrimEnd(',');

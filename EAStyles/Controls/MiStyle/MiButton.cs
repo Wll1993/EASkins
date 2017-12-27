@@ -12,11 +12,11 @@ namespace EAStyles.Controls.MiStyle
 {
     
 
-    public class MiButton : ButtonBase
+    public class MiButton : Button
     {
-        public static readonly DependencyProperty MiTitleButtonStyleProperty = ElementBase.Property<MiTitleButton, ButtonStyle>("MiTitleButtonStyleProperty", ButtonStyle.None);
+        public static readonly DependencyProperty MiButtonStyleProperty = ElementBase.Property<MiTitleButton, ButtonStyle>("MiButtonStyleProperty", ButtonStyle.None);
 
-        public ButtonStyle MiTitleButtonStyle { get { return (ButtonStyle)GetValue(MiTitleButtonStyleProperty); } set { SetValue(MiTitleButtonStyleProperty, value); } }
+        public ButtonStyle MiButtonStyle { get { return (ButtonStyle)GetValue(MiButtonStyleProperty); } set { SetValue(MiButtonStyleProperty, value); } }
 
         public MiButton()
         {

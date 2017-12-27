@@ -77,10 +77,21 @@
     <Compile Include="Themes\Theme.cs" />
     <Compile Include="Utilitys\Element\ElementBase.cs" />
     <Compile Include="Utilitys\Element\NotificationElement.cs" />
+    <Compile Include="Utilitys\Media\HsbaColor.cs" />
+    <Compile Include="Utilitys\Media\RgbaColor.cs" />
+    <Compile Include="Utilitys\Media\Utility.cs" />
     <Compile Include="WFControls\AmiControls.cs" />
     <Compile Include="WFControls\EmiControls.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Themes\MiStyle\MiRichTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\MiStyle\MiTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\MiStyle\MiDataGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

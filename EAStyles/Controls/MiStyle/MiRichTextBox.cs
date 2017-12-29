@@ -83,6 +83,14 @@ namespace EAStyles.Controls.MiStyle
                 }
                 return sb.ToString();
             }
+            set
+            {
+                Document.Blocks.Clear();
+                Paragraph paragraph = new Paragraph();
+                Run run = new Run(value);
+                paragraph.Inlines.Add(run);
+                Document.Blocks.Add(paragraph);
+            }
         }
 
         public void AddLine(string content, RgbaColor rgba, Action action)

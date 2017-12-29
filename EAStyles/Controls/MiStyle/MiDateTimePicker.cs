@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EAStyles.Utilitys;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -6,7 +7,9 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
+using System.Windows.Input;
 using System.Windows.Markup;
+using System.Windows.Media;
 
 namespace EAStyles.Controls.MiStyle
 {
@@ -21,6 +24,8 @@ namespace EAStyles.Controls.MiStyle
         private TextBlock _textBlock;
         private Popup _popUp;
         private Calendar _calendar;
+        private Border _borderFocus;
+        private Border _borderNormal;
         private BlockManager _blockManager;
         private string _defaultFormat = "yyyy/MM/dd HH:mm:ss";
         [Category("MiDateTimePicker")]
@@ -111,11 +116,9 @@ namespace EAStyles.Controls.MiStyle
             }
             set { SetValue(ValueProperty, value); }
         }
-
         // Using a DependencyProperty as the backing store for TheDate.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ValueProperty =
             DependencyProperty.Register("Value", typeof(DateTime?), typeof(MiDateTimePicker), new FrameworkPropertyMetadata(DateTime.Now, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault, new PropertyChangedCallback(MiDateTimePicker.OnValueChanged), new CoerceValueCallback(MiDateTimePicker.CoerceValue), true, System.Windows.Data.UpdateSourceTrigger.PropertyChanged));
-
 
         static void OnValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
@@ -141,6 +144,7 @@ namespace EAStyles.Controls.MiStyle
         {
             this.Initializ();
             this._blockManager = new BlockManager(this, this.FormatString);
+            ControlUtility.Refresh(this);
         }
 
         private void Initializ()
@@ -151,6 +155,8 @@ namespace EAStyles.Controls.MiStyle
             this._textBox = (TextBox)this.Template.FindName("textBox", this);
             this._textBlock = (TextBlock)this.Template.FindName("textBlock", this);
             this._calendar = new Calendar();
+            this._borderNormal = (Border)this.Template.FindName("borderNormal", this);
+            this._borderFocus = (Border)this.Template.FindName("borderFocus", this);
             this._popUp = new Popup();
             this._popUp.PlacementTarget = this._textBox;
             this._popUp.Placement = PlacementMode.Bottom;
@@ -158,6 +164,8 @@ namespace EAStyles.Controls.MiStyle
             this._checkBox.Checked += new RoutedEventHandler(_checkBox_Checked);
             this._checkBox.Unchecked += new RoutedEventHandler(_checkBox_Checked);
             this.MouseWheel += new System.Windows.Input.MouseWheelEventHandler(MiDateTimePicker_MouseWheel);
+            this.MouseEnter += new System.Windows.Input.MouseEventHandler(MiDateTimePicker_MouseEnter);
+            this.MouseLeave += new System.Windows.Input.MouseEventHandler(MiDateTimePicker_MouseLeave);
             this.Focusable = false;
             this._textBox.Cursor = System.Windows.Input.Cursors.Arrow;
             this._textBox.AllowDrop = false;
@@ -170,6 +178,22 @@ namespace EAStyles.Controls.MiStyle
             this._textBox.IsReadOnlyCaretVisible = false;
             this._textBlock.MouseLeftButtonDown += new System.Windows.Input.MouseButtonEventHandler(_textBlock_MouseLeftButtonDown);
             this._calendar.SelectedDatesChanged += new EventHandler<SelectionChangedEventArgs>(calendar_SelectedDatesChanged);
+        }
+
+        private void MiDateTimePicker_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (this._borderFocus == null || this._borderNormal == null)
+                return;
+            this._borderFocus.Opacity = 0;
+            this._borderNormal.Opacity = 0.15;
+        }
+
+        private void MiDateTimePicker_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            if (this._borderFocus == null || this._borderNormal == null)
+                return;
+            this._borderFocus.Opacity = 1;
+            this._borderNormal.Opacity = 0;
         }
 
         void _textBlock_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -188,7 +212,7 @@ namespace EAStyles.Controls.MiStyle
         }
 
         void _textBox_GotFocus(object sender, System.Windows.RoutedEventArgs e)
-        {            
+        {
             this._blockManager.ReSelect();
         }
 
@@ -226,17 +250,39 @@ namespace EAStyles.Controls.MiStyle
 
         private ControlTemplate GetTemplate()
         {
+            //return (ControlTemplate)XamlReader.Parse(@"
+            //    <ControlTemplate  xmlns=""http://schemas.microsoft.com/winfx/2006/xaml/presentation""
+            //                      xmlns:x=""http://schemas.microsoft.com/winfx/2006/xaml"">
+                   
+            //            <Border x:Name = ""bordermove"" BorderThickness = ""1"" CornerRadius = ""0"" BorderBrush = ""{TemplateBinding BorderBrush}"" Opacity = ""0"">
+            //                <Grid >
+            //                    <CheckBox Name=""checkBox"" VerticalAlignment=""Center"" />
+            //                    <TextBox Name=""textBox"" BorderThickness=""0"" VerticalAlignment=""Center"" VerticalContentAlignment=""Center""/>
+            //                    <TextBlock Name=""textBlock"" Text=""...""  =""Center"" HorizontalAlignment=""Right"" />
+            //                </Grid>
+            //            </Border>                    
+            //    </ControlTemplate>");
             return (ControlTemplate)XamlReader.Parse(@"
-        <ControlTemplate  xmlns=""http://schemas.microsoft.com/winfx/2006/xaml/presentation""
-                          xmlns:x=""http://schemas.microsoft.com/winfx/2006/xaml"">
-            <Border BorderThickness=""0"" CornerRadius=""0"" >
-                <Grid Margin=""0"">
-                    <CheckBox Name=""checkBox"" VerticalAlignment=""Center"" />
-                    <TextBox Name=""textBox"" BorderThickness=""0"" VerticalAlignment=""Center"" VerticalContentAlignment=""Center"" Height=""26""/>
-                    <TextBlock Name=""textBlock"" Text=""..."" VerticalAlignment=""Center"" HorizontalAlignment=""Right"" Height=""26""/>
-                </Grid>
-            </Border>
-        </ControlTemplate>");
+                <ControlTemplate  xmlns=""http://schemas.microsoft.com/winfx/2006/xaml/presentation""
+                                  xmlns:x=""http://schemas.microsoft.com/winfx/2006/xaml""> 
+                    <Border Height=""20"">
+                        <Grid>
+                            <Border x:Name = ""borderNormal"" BorderThickness = ""1"" CornerRadius = ""0"" BorderBrush = ""#FF000000""  Opacity=""0.15""/>
+                            <Border x:Name = ""borderFocus"" BorderThickness = ""1"" CornerRadius = ""0"" BorderBrush = ""{TemplateBinding BorderBrush}"" Opacity=""0""/>
+                            <CheckBox Name=""checkBox"" VerticalAlignment=""Center"" Margin=""1""/>
+                            <TextBox Name=""textBox"" BorderThickness=""0"" VerticalAlignment=""Center"" VerticalContentAlignment=""Center"" Margin=""1""/>
+                            <TextBlock Name=""textBlock"" Text=""..."" VerticalAlignment =""Center"" HorizontalAlignment=""Right"" Margin=""1""/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>");
+                     //< ControlTemplate.Triggers >
+                     //   < Trigger Property = ""IsMouseOver"" Value = ""true"" > 
+                     //        < Setter Property = ""Opacity"" TargetName = ""borderNormal"" Value = ""0"" /> 
+                     //        < Setter Property = ""Opacity"" TargetName = ""borderFocus"" Value = ""1"" /> 
+                     //    </ Trigger > 
+                     //</ ControlTemplate.Triggers >
+            // <Border x:Name=""border"" BorderThickness=""1"" CornerRadius=""0"" BorderBrush=""#FF000000"" Opacity=""0.15"">
+            //</Border>
         }
 
         public override string ToString()

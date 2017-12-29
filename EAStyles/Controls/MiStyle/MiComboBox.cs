@@ -12,7 +12,7 @@ namespace EAStyles.Controls.MiStyle
 
         static MiComboBox()
         {
-            //ElementBase.DefaultStyle<MiComboBox>(DefaultStyleKeyProperty);
+            ElementBase.DefaultStyle<MiComboBox>(DefaultStyleKeyProperty);
         }
     }
 }

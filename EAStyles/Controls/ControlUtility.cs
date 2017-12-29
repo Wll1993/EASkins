@@ -71,6 +71,10 @@ namespace EAStyles.Controls
                 {
                     (control as MiComboBox).BorderBrush = mw.BorderBrush.Clone();
                 }
+                if (control is MiDateTimePicker)
+                {
+                    (control as MiDateTimePicker).BorderBrush = mw.BorderBrush.Clone();
+                }
                 //if (control is MiTitleMenu)
                 //{
                 //    (control as MiTitleMenu).Background = mw.BorderBrush;

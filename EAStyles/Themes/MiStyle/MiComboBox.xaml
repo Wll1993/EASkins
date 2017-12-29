@@ -6,25 +6,6 @@
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiBase.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
-    <!--<Style TargetType="Mi:MiComboBox">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate>
-                    <Grid>
-                        <Border x:Name="borderFront" BorderBrush="#20000000" BorderThickness="1" Opacity="1"/>
-                        <Border x:Name="borderback" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" Opacity="0"/>
-                        <ComboBox x:Name="comboBox"  Margin="1" IsEditable="True"></ComboBox>
-                    </Grid>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="borderback" Property="Opacity" Value="1"></Setter>
-                            <Setter TargetName="borderFront" Property="Opacity" Value="0"></Setter>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>-->
     <Style TargetType="ToggleButton" x:Key="ComboxStyleBtn">
         <Setter Property="Template">
             <Setter.Value>
@@ -60,11 +41,11 @@
                 <!--ComBoxItem-->
                 <Style TargetType="ComboBoxItem">
                     <Setter Property="MinHeight" Value="22"></Setter>
-                    <Setter Property="MinWidth" Value="60"></Setter>
+                    <Setter Property="MinWidth" Value="40"></Setter>
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="ComboBoxItem">
-                                <Border Name="Back" Background="Transparent"  BorderThickness="0,0,0,0" BorderBrush="#81D779" >
+                                <Border Name="Back" Background="#AAFFFFFF"  BorderThickness="0,0,0,0"  >
                                     <ContentPresenter ContentSource="{Binding Source}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" ></ContentPresenter>
                                 </Border>
                                 <ControlTemplate.Triggers>
@@ -72,9 +53,9 @@
                                         <Setter TargetName="Back" Property="Background" Value="LightGray"></Setter>
                                     </Trigger>
                                     <!--下拉框背景色-->
-                                    <Trigger Property="IsHighlighted" Value="True">
+                                    <!--<Trigger Property="IsHighlighted" Value="True">
                                         <Setter TargetName="Back" Property="Background" Value="#ff0000"></Setter>
-                                    </Trigger>
+                                    </Trigger>-->
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
                         </Setter.Value>
@@ -106,7 +87,7 @@
                                     <DropShadowEffect Color="Black" BlurRadius="2" ShadowDepth="0" Opacity="1"/>
                                 </Border.Effect>
                                 <!--下拉幕布边界背景设置 MaxHeight="{TemplateBinding MaxDropDownHeight}"-->
-                                <ScrollViewer Margin="0,0,0,0"   SnapsToDevicePixels="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" BorderBrush="#17acae" BorderThickness="2" >
+                                <ScrollViewer Margin="0,0,0,0"   SnapsToDevicePixels="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" BorderThickness="2" >
                                      <!--StackPanel 用于显示子级，方法是将 IsItemsHost 设置为 True--> 
                                     <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" Background="#20000000" />
                                 </ScrollViewer>

@@ -161,6 +161,8 @@ namespace EAStyles.Controls.MiStyle
             this._popUp.PlacementTarget = this._textBox;
             this._popUp.Placement = PlacementMode.Bottom;
             this._popUp.Child = this._calendar;
+            this._popUp.AllowsTransparency = true;
+            this._popUp.PopupAnimation = PopupAnimation.Slide;
             this._checkBox.Checked += new RoutedEventHandler(_checkBox_Checked);
             this._checkBox.Unchecked += new RoutedEventHandler(_checkBox_Checked);
             this.MouseWheel += new System.Windows.Input.MouseWheelEventHandler(MiDateTimePicker_MouseWheel);

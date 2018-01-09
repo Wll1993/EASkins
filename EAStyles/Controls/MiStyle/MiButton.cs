@@ -20,12 +20,12 @@ namespace EAStyles.Controls.MiStyle
 
         public MiButton()
         {
-            //EAStyles.Controls.ControlUtility.Refresh(this);
+            EAStyles.Controls.ControlUtility.Refresh(this);
         }
 
         static MiButton()
         {
-            //ElementBase.DefaultStyle<MiTitleButton>(DefaultStyleKeyProperty);
+            ElementBase.DefaultStyle<MiButton>(DefaultStyleKeyProperty);
         }
 
         public enum ButtonStyle

@@ -86,6 +86,10 @@
     <Compile Include="WFControls\EmiControls.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Themes\MiStyle\MiButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Themes\MiStyle\MiComboBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -93,6 +97,10 @@
     <Page Include="Themes\MiStyle\MiRichTextBox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\MiStyle\MiTextBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Themes\MiStyle\MiTextBox.xaml">
       <Generator>MSBuild:Compile</Generator>

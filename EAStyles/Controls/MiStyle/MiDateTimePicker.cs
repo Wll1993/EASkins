@@ -71,7 +71,7 @@ namespace EAStyles.Controls.MiStyle
                     case DateTimePickerFormat.Long:
                         return "yyyy/MM/dd HH:mm:ss tt";
                     case DateTimePickerFormat.Short:
-                        return "yyyy/M/d";
+                        return "yyyy/MM/dd";
                     case DateTimePickerFormat.Time:
                         return "h:mm:ss tt";
                     case DateTimePickerFormat.Custom:
@@ -118,11 +118,15 @@ namespace EAStyles.Controls.MiStyle
         }
         // Using a DependencyProperty as the backing store for TheDate.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ValueProperty =
-            DependencyProperty.Register("Value", typeof(DateTime?), typeof(MiDateTimePicker), new FrameworkPropertyMetadata(DateTime.Now, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault, new PropertyChangedCallback(MiDateTimePicker.OnValueChanged), new CoerceValueCallback(MiDateTimePicker.CoerceValue), true, System.Windows.Data.UpdateSourceTrigger.PropertyChanged));
+            DependencyProperty.Register("Value", typeof(DateTime?), typeof(MiDateTimePicker), 
+                new FrameworkPropertyMetadata(DateTime.Now, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault, 
+                    new PropertyChangedCallback(MiDateTimePicker.OnValueChanged), 
+                    new CoerceValueCallback(MiDateTimePicker.CoerceValue), true, System.Windows.Data.UpdateSourceTrigger.PropertyChanged));
 
         static void OnValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            (d as MiDateTimePicker)._blockManager.Render();
+            if((d as MiDateTimePicker)._blockManager!=null)
+                (d as MiDateTimePicker)._blockManager.Render();
         }
 
         static object CoerceValue(DependencyObject d, object value)
@@ -150,7 +154,7 @@ namespace EAStyles.Controls.MiStyle
         private void Initializ()
         {
             this.Template = this.GetTemplate();
-            this.ApplyTemplate();
+            this.ApplyTemplate();            
             this._checkBox = (CheckBox)this.Template.FindName("checkBox", this);
             this._textBox = (TextBox)this.Template.FindName("textBox", this);
             this._textBlock = (TextBlock)this.Template.FindName("textBlock", this);
@@ -179,7 +183,7 @@ namespace EAStyles.Controls.MiStyle
             this._textBox.IsReadOnly = true;
             this._textBox.IsReadOnlyCaretVisible = false;
             this._textBlock.MouseLeftButtonDown += new System.Windows.Input.MouseButtonEventHandler(_textBlock_MouseLeftButtonDown);
-            this._calendar.SelectedDatesChanged += new EventHandler<SelectionChangedEventArgs>(calendar_SelectedDatesChanged);
+            this._calendar.SelectedDatesChanged += new EventHandler<SelectionChangedEventArgs>(calendar_SelectedDatesChanged);            
         }
 
         private void MiDateTimePicker_MouseLeave(object sender, MouseEventArgs e)
@@ -319,7 +323,7 @@ namespace EAStyles.Controls.MiStyle
             this._format = format;
             this._dtPicker.LostFocus += new RoutedEventHandler(_MiDateTimePicker_LostFocus);
             this._blocks = new List<Block>();
-            this.InitBlocks();
+            this.InitBlocks();            
         }
 
         private void InitBlocks()

@@ -36,6 +36,7 @@
     </Style>
     <!--Combox-->
     <Style TargetType="Mi:MiComboBox">
+        <Setter Property="IsEditable" Value="True"/>        
         <Setter Property="ItemContainerStyle">
             <Setter.Value>
                 <!--ComBoxItem-->
@@ -52,10 +53,6 @@
                                     <Trigger Property="IsMouseOver" Value="True">
                                         <Setter TargetName="Back" Property="Background" Value="LightGray"></Setter>
                                     </Trigger>
-                                    <!--下拉框背景色-->
-                                    <!--<Trigger Property="IsHighlighted" Value="True">
-                                        <Setter TargetName="Back" Property="Background" Value="#ff0000"></Setter>
-                                    </Trigger>-->
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
                         </Setter.Value>
@@ -69,11 +66,11 @@
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="70*"/>
-                            <ColumnDefinition Width="30*" MaxWidth="30"/>
+                            <ColumnDefinition Width="30*" MinWidth="16" MaxWidth="30"/>
                         </Grid.ColumnDefinitions>
                         <!--文字区域背景和边线样式-->
-                        <TextBox VerticalAlignment="Center" Grid.Column="0" BorderThickness="0" IsReadOnly="{TemplateBinding IsReadOnly}" Text="{TemplateBinding Text}" Margin="0" 
-                                 TextWrapping="NoWrap" SnapsToDevicePixels="True" />
+                        <TextBox VerticalAlignment="Center" Grid.Column="0" BorderThickness="0" IsReadOnly="{TemplateBinding IsReadOnly}" IsEnabled="{TemplateBinding IsEditable}" Text="{TemplateBinding Text}" 
+                                 Margin="0" TextWrapping="NoWrap" SnapsToDevicePixels="True" VerticalContentAlignment="Center" Height="26"/>
                         <Border x:Name="borderNormal" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="1" BorderBrush="#20000000" CornerRadius="0" Opacity="1"/>
                         <Border x:Name="borderFocus" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="1" BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="0" Opacity="0"/>
 
@@ -81,9 +78,9 @@
                         <ToggleButton Grid.Column="1" BorderThickness="3" Style="{StaticResource ComboxStyleBtn}" IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press"></ToggleButton>
                         
                         <!--弹出popup整体设置-->
-                        <Popup IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom" x:Name="Popup" Focusable="False" AllowsTransparency="True" PopupAnimation="Slide" >
+                        <Popup IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom" x:Name="Popup" Focusable="False" AllowsTransparency="True" PopupAnimation="Slide">
                             <!--弹出popup边框-->
-                            <Border CornerRadius="1" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1,0,1,1" MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{TemplateBinding ActualWidth}" x:Name="DropDown" SnapsToDevicePixels="True">
+                            <Border CornerRadius="1" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1,0,1,1" MaxHeight="{TemplateBinding MaxDropDownHeight}" Width="{TemplateBinding ActualWidth}" x:Name="DropDown" SnapsToDevicePixels="True">
                                 <Border.Effect>
                                     <DropShadowEffect Color="Black" BlurRadius="2" ShadowDepth="0" Opacity="1"/>
                                 </Border.Effect>

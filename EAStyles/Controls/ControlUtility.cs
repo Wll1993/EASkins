@@ -51,6 +51,10 @@ namespace EAStyles.Controls
                 {
                     (control as MiTabItem).Background = mw.BorderBrush.Clone();
                 }
+                if (control is MiButton)
+                {
+                    (control as MiButton).BorderBrush = mw.BorderBrush.Clone();
+                }
                 if (control is MiTitleButton)
                 {
                     (control as MiTitleButton).Background = mw.BorderBrush.Clone();
@@ -90,12 +94,7 @@ namespace EAStyles.Controls
                 //if (control is MiContextMenu)
                 //{
                 //    (control as MiContextMenu).Background = mw.BorderBrush;
-                //}
-
-                //if (control is MiButton)
-                //{
-                //    (control as MiButton).Background = mw.BorderBrush;
-                //}
+                //}                
                 //if (control is MiMenuTabControl)
                 //{
                 //    (control as MiMenuTabControl).BorderBrush = mw.BorderBrush;

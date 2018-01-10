@@ -10,7 +10,7 @@
         <Setter Property="Height" Value="22" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="CornerRadius" Value="0" />
-        <Setter Property="BorderCornerRadius" Value="12" />
+        <Setter Property="BorderCornerRadius" Value="0" />
         <Setter Property="Background" Value="{StaticResource Brush}"/>
         <Setter Property="Template">
             <Setter.Value>

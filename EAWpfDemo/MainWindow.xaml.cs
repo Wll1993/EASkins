@@ -28,17 +28,20 @@ namespace EAWpfDemo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int i = 0;
-            while (i<i+1)
-            {
-                i++;
-            }
-            int a = i;
         }
 
         private void menuclick(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("test");
+        }
+
+        private void btnStyle_Click(object sender, RoutedEventArgs e)
+        {
+            Style style = new Style();
+            style.ShowInTaskbar = false;
+            style.Owner = this;
+            style.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            style.ShowDialog();
         }
     }
 }

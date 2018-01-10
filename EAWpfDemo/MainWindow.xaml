@@ -5,62 +5,43 @@
         xmlns:Mi="clr-namespace:EAStyles.Controls.MiStyle;assembly=EAStyles"
         Title="MainWindow" Height="500" Width="800" Icon="Resources/acorn.ico" >
     <Mi:MiWindow.UserComponent>
-        <!--<Button Margin="3" Width="20" Click="menuclick"></Button>-->
-        <StackPanel>
-            <Menu Height="30"  HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center">
-                <MenuItem Header="222">
-                    <MenuItem Header="111111" />
-                    <MenuItem Header="22222222" />
-                    <MenuItem Header="33333333" />
-                </MenuItem>
-                <MenuItem Header="3333" />
-            </Menu>
-        </StackPanel>
+        <WrapPanel>
+            <Mi:MiTitleButton Width="40" Click="btnStyle_Click">
+                <Image Source="Resources/style.png" />
+            </Mi:MiTitleButton>
+        </WrapPanel>
     </Mi:MiWindow.UserComponent>
-    
-     <Grid Margin="10">
+
+    <Grid Margin="10">
         <Mi:MiTabControl Margin="0" >
             <Mi:MiTabItem Header="TabItem1" IdxHeader="1">
-                <Grid>
-                    <Mi:MiButton Background="Blue"  Content="test" Margin="31,32,492.2,368.4" Width="100" Height="50"></Mi:MiButton>
-                    <Mi:MiTextBox></Mi:MiTextBox>
+                <Grid >
+                    <Mi:MiButton  Content="button" Margin="10,10,494.2,393.4"/>
+                    <Mi:MiTextBox Margin="10,129,494.2,284.4"/>
+                    <Mi:MiRichTextBox Margin="10,303,425.2,10.4"/>
+                    <Mi:MiComboBox Margin="10,76,494.2,340.4" RenderTransformOrigin="0.5,0.5">
+                        <ComboBoxItem>哈哈</ComboBoxItem>
+                        <ComboBoxItem>呵呵</ComboBoxItem>
+                        <ComboBoxItem>嘿嘿</ComboBoxItem>
+                    </Mi:MiComboBox>
+                    <Mi:MiToggleButton Height="24" Margin="134,10,425.2,393.4"/>
                 </Grid>
             </Mi:MiTabItem>
-            <Mi:MiTabItem Header="TabItem2" IdxHeader="2">
-                <Grid Background="#FFE5E5E5"/>
-            </Mi:MiTabItem>
-            <Mi:MiTabItem Header="TabItem2" IdxHeader="99">
-                <Grid Background="#FFE5E5E5">
-                    <Mi:MiToggleButton Margin="-10,211,10.2,215.4" ></Mi:MiToggleButton>
-                 </Grid>
-            </Mi:MiTabItem>
-            <Mi:MiTabItem Header="TabItem2" IdxHeader="-">
-                <Grid Background="#FFE5E5E5"/>
-            </Mi:MiTabItem>
-            <Mi:MiTabItem Header="TabItem2">
-                <Grid Background="#FFE5E5E5"/>
-            </Mi:MiTabItem>
-            <Mi:MiTabItem Header="TabItem2">
-                <Grid Background="#FFE5E5E5"/>
-            </Mi:MiTabItem>
-            <Mi:MiTabItem Header="TabItem2">
-                <Grid Background="#FFE5E5E5"/>
-            </Mi:MiTabItem>
-            <Mi:MiTabItem Header="TabItem2">
-                <Grid Background="#FFE5E5E5"/>
-            </Mi:MiTabItem>
-            <Mi:MiTabItem Header="TabItem2">
-                <Grid Background="#FFE5E5E5"/>
-            </Mi:MiTabItem>
-            <Mi:MiTabItem Header="TabItem2">
-                <Grid Background="#FFE5E5E5"/>
-            </Mi:MiTabItem>
-            <Mi:MiTabItem Header="TabItem2">
-                <Grid Background="#FFE5E5E5"/>
-            </Mi:MiTabItem>
-            <Mi:MiTabItem Header="TabItem10">
-                <Grid Background="#FFE5E5E5"/>
-            </Mi:MiTabItem>
+            <Mi:MiTabItem Header="TabItem2" IdxHeader="2" />
+            <Mi:MiTabItem Header="TabItem2" IdxHeader="99" />
+            <Mi:MiTabItem Header="TabItem2" IdxHeader="-"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
         </Mi:MiTabControl>
     </Grid>
 </Mi:MiWindow>

@@ -94,10 +94,10 @@
                         </Popup>
                     </Grid>
                     <ControlTemplate.Triggers>
-                    <Trigger Property="IsMouseOver" Value="true">
+                        <Trigger Property="IsMouseOver" Value="true">
                             <Setter Property="Opacity" TargetName="borderNormal" Value="0"/>
                             <Setter Property="Opacity" TargetName="borderFocus" Value="1"/>
-                     </Trigger>
+                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>

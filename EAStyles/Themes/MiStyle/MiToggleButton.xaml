@@ -27,13 +27,11 @@
                                     <Storyboard>
                                         <ThicknessAnimation Storyboard.TargetName="yuan" Storyboard.TargetProperty="(Margin)" To="2,2,2,2" Duration="0:0:0.2" />
                                         <ThicknessAnimation Storyboard.TargetName="yuan" Storyboard.TargetProperty="(Margin)" To="23,2,2,2" Duration="0:0:0.4" />
-                                        <!--<ColorAnimation Storyboard.TargetName="back" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="#99cb8a" Duration="0:0:0.4" />-->                                        
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="OpenLoaded">
                                     <Storyboard>
                                         <ThicknessAnimation Storyboard.TargetName="yuan" Storyboard.TargetProperty="(Margin)" To="23,2,2,2" Duration="0:0:0" />
-                                        <!--<ColorAnimation Storyboard.TargetName="back" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="#99cb8a" Duration="0:0:0" />-->
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Close">
@@ -46,13 +44,12 @@
                                 <VisualState x:Name="CloseLoaded">
                                     <Storyboard>
                                         <ThicknessAnimation Storyboard.TargetName="yuan" Storyboard.TargetProperty="(Margin)" To="2,2,23,2" Duration="0:0:0" />
-                                        <ColorAnimation Storyboard.TargetName="back" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="{StaticResource EGrayColor}" Duration="0:0:0" />
                                     </Storyboard>
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
                         <TextBlock x:Name="title" Text="{TemplateBinding Content}" VerticalAlignment="Center" HorizontalAlignment="{TemplateBinding TextHorizontalAlignment}" Opacity="0.65" />
-                        <Border x:Name="back" Grid.Column="2" CornerRadius="{TemplateBinding BorderCornerRadius}" Background="{TemplateBinding Background}" />
+                        <Border x:Name="back" Grid.Column="2" CornerRadius="{TemplateBinding BorderCornerRadius}" Background="{TemplateBinding Background}"/>
                         <Border x:Name="backFalse" Grid.Column="2" CornerRadius="{TemplateBinding BorderCornerRadius}" />
                         <Border x:Name="yuan" Grid.Column="2" Background="#ffffff" CornerRadius="{TemplateBinding CornerRadius}" Margin="2" />
                     </Grid>
@@ -61,6 +58,9 @@
                             <Setter Property="Opacity" TargetName="title" Value="0.35" />
                             <Setter Property="Opacity" TargetName="back" Value="0" />
                             <Setter Property="Background" TargetName="backFalse" Value="#d7d7d7" />
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="false">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource EGrayBrush}"/>
                         </Trigger>
                         <Trigger Property="Content" Value="{x:Null}">
                             <Setter Property="Width" TargetName="width2" Value="0" />

@@ -173,6 +173,7 @@ namespace EAStyles.Controls.MiStyle
             this.MouseEnter += new System.Windows.Input.MouseEventHandler(MiDateTimePicker_MouseEnter);
             this.MouseLeave += new System.Windows.Input.MouseEventHandler(MiDateTimePicker_MouseLeave);
             this.Focusable = false;
+            this.ShowCheckBox = false;
             this._textBox.Cursor = System.Windows.Input.Cursors.Arrow;
             this._textBox.AllowDrop = false;
             this._textBox.GotFocus += new System.Windows.RoutedEventHandler(_textBox_GotFocus);

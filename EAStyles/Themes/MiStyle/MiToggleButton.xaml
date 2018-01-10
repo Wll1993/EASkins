@@ -27,26 +27,26 @@
                                     <Storyboard>
                                         <ThicknessAnimation Storyboard.TargetName="yuan" Storyboard.TargetProperty="(Margin)" To="2,2,2,2" Duration="0:0:0.2" />
                                         <ThicknessAnimation Storyboard.TargetName="yuan" Storyboard.TargetProperty="(Margin)" To="23,2,2,2" Duration="0:0:0.4" />
-                                        <ColorAnimation Storyboard.TargetName="back" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="#99cb8a" Duration="0:0:0.4" />
+                                        <!--<ColorAnimation Storyboard.TargetName="back" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="#99cb8a" Duration="0:0:0.4" />-->                                        
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="OpenLoaded">
                                     <Storyboard>
                                         <ThicknessAnimation Storyboard.TargetName="yuan" Storyboard.TargetProperty="(Margin)" To="23,2,2,2" Duration="0:0:0" />
-                                        <ColorAnimation Storyboard.TargetName="back" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="#99cb8a" Duration="0:0:0" />
+                                        <!--<ColorAnimation Storyboard.TargetName="back" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="#99cb8a" Duration="0:0:0" />-->
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Close">
                                     <Storyboard>
                                         <ThicknessAnimation Storyboard.TargetName="yuan" Storyboard.TargetProperty="(Margin)" To="2,2,2,2" Duration="0:0:0.2" />
                                         <ThicknessAnimation Storyboard.TargetName="yuan" Storyboard.TargetProperty="(Margin)" To="2,2,23,2" Duration="0:0:0.4" />
-                                        <!--<ColorAnimation Storyboard.TargetName="back" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="#FF565656" Duration="0:0:0.4" />-->
+                                        <ColorAnimation Storyboard.TargetName="back" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="{StaticResource EGrayColor}" Duration="0:0:0.4" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="CloseLoaded">
                                     <Storyboard>
                                         <ThicknessAnimation Storyboard.TargetName="yuan" Storyboard.TargetProperty="(Margin)" To="2,2,23,2" Duration="0:0:0" />
-                                        <!--<ColorAnimation Storyboard.TargetName="back" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="#FF565656" Duration="0:0:0" />-->
+                                        <ColorAnimation Storyboard.TargetName="back" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="{StaticResource EGrayColor}" Duration="0:0:0" />
                                     </Storyboard>
                                 </VisualState>
                             </VisualStateGroup>

@@ -7,13 +7,14 @@
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="ToggleButton" x:Key="ComboxStyleBtn">
+        <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate>
                     <!--下拉按钮内部背景色-->
-                    <Border x:Name="Back" Background="#20000000" BorderThickness="1" BorderBrush="Transparent">
+                    <Border x:Name="Back" Background="{StaticResource EGrayBrush}" BorderThickness="1" BorderBrush="Transparent">
                         <!--下拉按钮内边框-->
-                        <Path Name="PathFill" Fill="#20000000"  Width="10" Height="6" StrokeThickness="0" Data="M5,0 L10,10 L0,10 z" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
+                        <Path Name="PathFill" Fill="#FF808080"  Width="10" Height="6" StrokeThickness="0" Data="M5,0 L10,10 L0,10 z" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
                             <Path.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -27,7 +28,7 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter TargetName="PathFill" Property="Fill" Value="White"></Setter>
-                            <Setter TargetName="Back" Property="Background" Value="#99cb8a"></Setter>                            
+                            <!--<Setter TargetName="Back" Property="Background" Value="#99cb8a"></Setter>-->
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -36,7 +37,7 @@
     </Style>
     <!--Combox-->
     <Style TargetType="Mi:MiComboBox">
-        <Setter Property="IsEditable" Value="True"/>        
+        <Setter Property="IsEditable" Value="True"/> 
         <Setter Property="ItemContainerStyle">
             <Setter.Value>
                 <!--ComBoxItem-->
@@ -71,7 +72,7 @@
                         <!--文字区域背景和边线样式-->
                         <TextBox VerticalAlignment="Center" Grid.Column="0" BorderThickness="0" IsReadOnly="{TemplateBinding IsReadOnly}" IsEnabled="{TemplateBinding IsEditable}" Text="{TemplateBinding Text}" 
                                  Margin="0" TextWrapping="NoWrap" SnapsToDevicePixels="True" VerticalContentAlignment="Center" Height="26"/>
-                        <Border x:Name="borderNormal" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="1" BorderBrush="#20000000" CornerRadius="0" Opacity="1"/>
+                        <Border x:Name="borderNormal" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="1" BorderBrush="{StaticResource EGrayBrush}" CornerRadius="0" Opacity="1"/>
                         <Border x:Name="borderFocus" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="1" BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="0" Opacity="0"/>
 
                         <!--右侧下拉button设置-->                        
@@ -87,7 +88,7 @@
                                 <!--下拉幕布边界背景设置 MaxHeight="{TemplateBinding MaxDropDownHeight}"-->
                                 <ScrollViewer Margin="0,0,0,0"   SnapsToDevicePixels="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" BorderThickness="2" >
                                      <!--StackPanel 用于显示子级，方法是将 IsItemsHost 设置为 True--> 
-                                    <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" Background="#20000000" />
+                                    <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" Background="{StaticResource EGrayBrush}" />
                                 </ScrollViewer>
                             </Border>
                         </Popup>

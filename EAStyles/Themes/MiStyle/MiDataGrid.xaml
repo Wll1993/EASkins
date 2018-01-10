@@ -5,8 +5,8 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiBase.xaml"/>
     </ResourceDictionary.MergedDictionaries>
- 
-    <Style TargetType="DataGrid">
+
+    <Style TargetType="{x:Type Mi:MiDataGrid}">
         <!--网格线颜色-->
         <Setter Property="CanUserResizeColumns" Value="false"/>
         <Setter Property="Background" Value="#E6DBBB" />
@@ -106,18 +106,5 @@
                 <Setter Property="Foreground" Value="Black"/>
             </Trigger>
         </Style.Triggers>
-    </Style>
-
-    <Style TargetType="{x:Type Mi:MiDataGrid}">
-        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-        <Setter Property="SnapsToDevicePixels" Value="True"/>
-        <Setter Property="ColumnHeaderStyle" Value="{StaticResource columnHeaderStyle}"/>
-        <!--<Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Mi:MiDataGrid}">
-
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>-->
     </Style>
 </ResourceDictionary>

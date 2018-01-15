@@ -26,6 +26,7 @@
                     </Mi:MiComboBox>
                     <Mi:MiToggleButton Height="24" Margin="134,10,425.2,393.4"/>
                     <Mi:MiDateTimePicker Margin="10,184,425.2,229.4"/>
+                    <Mi:MiProgressBar Margin="10,226,425.2,179.4" />
                 </Grid>
             </Mi:MiTabItem>
             <Mi:MiTabItem Header="TabItem2" IdxHeader="2" />

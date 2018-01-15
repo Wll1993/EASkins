@@ -79,6 +79,10 @@ namespace EAStyles.Controls
                 {
                     (control as MiDateTimePicker).BorderBrush = mw.BorderBrush.Clone();
                 }
+                if(control is MiProgressBar)
+                {
+                    (control as MiProgressBar).Background = mw.BorderBrush.Clone();
+                }
                 //if (control is MiTitleMenu)
                 //{
                 //    (control as MiTitleMenu).Background = mw.BorderBrush;

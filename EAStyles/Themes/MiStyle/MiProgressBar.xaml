@@ -12,7 +12,6 @@
     <Style TargetType="{x:Type Mi:MiProgressBar}">
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
-
         <Setter Property="ProgressBarHeight" Value="15"/>
         <Setter Property="CornerRadius" Value="7.5"/>
         <Setter Property="ProgressBarState" Value="None"/>

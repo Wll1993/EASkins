@@ -17,6 +17,7 @@
             <Mi:MiTabItem Header="TabItem1" IdxHeader="1">
                 <Grid >
                     <Mi:MiButton  Content="button" Margin="10,10,494.2,393.4"/>
+                    <Mi:MiButton  Content="button" Margin="230,10,266.2,393.4" IsButtonBusy="True"/>
                     <Mi:MiTextBox Margin="10,129,494.2,284.4"/>
                     <Mi:MiRichTextBox Margin="10,303,425.2,10.4"/>
                     <Mi:MiComboBox Margin="10,76,494.2,340.4" RenderTransformOrigin="0.5,0.5">
@@ -26,7 +27,7 @@
                     </Mi:MiComboBox>
                     <Mi:MiToggleButton Height="24" Margin="134,10,425.2,393.4"/>
                     <Mi:MiDateTimePicker Margin="10,184,425.2,229.4"/>
-                    <Mi:MiProgressBar Margin="10,226,425.2,179.4" />
+                    <Mi:MiProgressBar Margin="10,226,425.2,179.4" Height="20" />
                 </Grid>
             </Mi:MiTabItem>
             <Mi:MiTabItem Header="TabItem2" IdxHeader="2" />

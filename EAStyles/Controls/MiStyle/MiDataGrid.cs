@@ -10,7 +10,7 @@ namespace EAStyles.Controls.MiStyle
     {
         static MiDataGrid()
         {
-            //ElementBase.DefaultStyle<MiDataGrid>(DefaultStyleKeyProperty);
+            ElementBase.DefaultStyle<MiDataGrid>(DefaultStyleKeyProperty);
         }        
     }
 

@@ -28,6 +28,11 @@
                     <Mi:MiToggleButton Height="24" Margin="134,10,425.2,393.4"/>
                     <Mi:MiDateTimePicker Margin="10,184,425.2,229.4"/>
                     <Mi:MiProgressBar Margin="10,226,425.2,179.4" Height="20" />
+                    <Mi:MiDataGrid Margin="230,90,10.2,229.4">
+                        <DataGridColumnHeader>test1</DataGridColumnHeader>
+                        <DataGridColumnHeader>test2</DataGridColumnHeader>
+                        <DataGridColumnHeader>test3</DataGridColumnHeader>
+                    </Mi:MiDataGrid>
                 </Grid>
             </Mi:MiTabItem>
             <Mi:MiTabItem Header="TabItem2" IdxHeader="2" />

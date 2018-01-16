@@ -83,6 +83,10 @@ namespace EAStyles.Controls
                 {
                     (control as MiProgressBar).Background = mw.BorderBrush.Clone();
                 }
+                if (control is MiDataGrid)
+                {
+                    (control as MiDataGrid).BorderBrush = mw.BorderBrush.Clone();
+                }
                 //if (control is MiTitleMenu)
                 //{
                 //    (control as MiTitleMenu).Background = mw.BorderBrush;

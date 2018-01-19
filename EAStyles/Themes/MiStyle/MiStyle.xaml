@@ -8,6 +8,7 @@
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiButton.xaml"/>
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiToggleButton.xaml"/>
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiDataGrid.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiEfficientDataGrid.xaml"/> 
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiTextBox.xaml"/>
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiRichTextBox.xaml"/>
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiComboBox.xaml"/>

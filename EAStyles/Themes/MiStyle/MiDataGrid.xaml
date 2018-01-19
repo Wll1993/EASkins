@@ -7,8 +7,8 @@
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="{x:Type Mi:MiDataGrid}">
-        <!--<Setter Property="SelectionMode"
-                Value="Single" />-->
+        <Setter Property="SelectionMode"
+                Value="Single" />
         <Setter Property="SelectionUnit"
                 Value="FullRow" />
         <Setter Property="GridLinesVisibility"
@@ -127,8 +127,8 @@
                         Value="Hand" />
                 <Setter Property="Foreground"
                         Value="Black" />
-                <Setter Property="FontSize"
-                        Value="{StaticResource BodyFontSize}" />
+                <!--<Setter Property="FontSize"
+                        Value="{StaticResource BodyFontSize}" />-->
                 <!--<Setter Property="FontFamily"
                         Value="{StaticResource HeaderFontFamily}" />-->
                 <Setter Property="Template">
@@ -144,6 +144,7 @@
                                             Grid.ColumnSpan="2"
                                             Background="Transparent" />
                                     <TextBlock x:Name="HeaderText"
+                                               VerticalAlignment="Center"
                                                Foreground="{TemplateBinding Foreground}"
                                                FontSize="{TemplateBinding FontSize}"
                                                FontFamily="{TemplateBinding FontFamily}">
@@ -152,7 +153,7 @@
                                     </TextBlock>
 
                                     <Path x:Name="SortArrow"
-                                          Visibility="Visible"
+                                          Visibility="Hidden"
                                           Stretch="Fill"
                                           Grid.Column="1"
                                           Width="8"
@@ -175,20 +176,16 @@
                             </Grid>
 
                             <ControlTemplate.Triggers>
-                                <Trigger Property="IsMouseOver"
-                                         Value="true">
+                                <Trigger Property="IsMouseOver" Value="true">
                                     <Setter TargetName="BackgroundBorder"
                                             Property="Background"
                                             Value="{StaticResource Black20}" />
                                     <Setter TargetName="HeaderText"
                                             Property="Foreground"
                                             Value="{StaticResource Black100}" />
-                                    <Setter TargetName="SortArrow"
-                                            Property="Fill"
-                                            Value="{StaticResource Black100}" />
+                                    <Setter TargetName="SortArrow" Property="Visibility" Value="Visible"/>
                                 </Trigger>
-                                <Trigger Property="SortDirection"
-                                         Value="Ascending">
+                                <Trigger Property="SortDirection" Value="Ascending">
                                     <Setter TargetName="SortArrow"
                                             Property="RenderTransform">
                                         <Setter.Value>
@@ -243,9 +240,7 @@
                                          Value="True">
                                     <Setter Property="Background"
                                             Value="{StaticResource Black20}" />
-                                    <!--<Setter Property="Foreground"
-                                            Value="{StaticResource White100}" />-->
-                                </Trigger>
+                                       </Trigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>
                     </Setter.Value>

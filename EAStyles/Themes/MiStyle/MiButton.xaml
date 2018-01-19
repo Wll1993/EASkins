@@ -44,8 +44,8 @@
                                 <Border x:Name="back" Background="{TemplateBinding Background}">
                                     <Grid>
                                         <Border x:Name="move" Background="#FFFFFFFF" Opacity="0"/>
-                                        <Mi:MiProgressBar x:Name="progress" Margin="0" Height="0" 
-                                                          CornerRadius="0" VerticalAlignment="Bottom"/>
+                                        <Mi:MiProgressBar x:Name="progress" Margin="0" Height="4" 
+                                                          CornerRadius="0" VerticalAlignment="Bottom" Visibility="Hidden" IsEnabled="False"/>
                                         <ContentPresenter Margin="{TemplateBinding Padding}" HorizontalAlignment="Center" VerticalAlignment="Center" />                                        
                                     </Grid>
                                 </Border>
@@ -62,8 +62,9 @@
                             <Setter TargetName="border" Property="BorderThickness" Value="1"/>
                         </Trigger>
                         <Trigger Property="IsButtonBusy" Value="true">
-                            <Setter TargetName="progress" Property="ProgressBarState" Value="Wait"/>
-                            <Setter TargetName="progress" Property="Height" Value="4"/>
+                            <Setter TargetName="progress" Property="ProgressBarState" Value="Wait"/>                            
+                            <Setter TargetName="progress" Property="IsEnabled" Value="True"/>
+                            <Setter TargetName="progress" Property="Visibility" Value="Visible"/>
                             <Setter Property="IsEnabled" Value="False"/>
                         </Trigger>
                         <!--<Trigger Property="MiButtonStyle" Value="StyleOne">

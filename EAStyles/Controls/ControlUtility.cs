@@ -87,6 +87,10 @@ namespace EAStyles.Controls
                 {
                     (control as MiDataGrid).BorderBrush = mw.BorderBrush.Clone();
                 }
+                if(control is MiEfficientDataGrid)
+                {
+                    (control as MiEfficientDataGrid).BorderBrush = mw.BorderBrush.Clone();
+                }
                 //if (control is MiTitleMenu)
                 //{
                 //    (control as MiTitleMenu).Background = mw.BorderBrush;

@@ -6,6 +6,7 @@
     <Color x:Key="EGrayColor" A="255" R="180" G="180" B="180"/><!--空白处颜色-->
     <SolidColorBrush x:Key="EGrayBrush" Color="{StaticResource EGrayColor}"/><!--空白处颜色画笔-->
 
+    <!-- Black Brush Colors-->
     <SolidColorBrush x:Key="Black100"  Color="#FF333333" />
     <SolidColorBrush x:Key="Black80"  Color="#FF595959" />
     <SolidColorBrush x:Key="Black60"  Color="#FF888888" />

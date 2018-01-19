@@ -12,9 +12,10 @@ namespace EAStyles.Controls.MiStyle
             ResourceDictionary styleRes = new ResourceDictionary();
             styleRes.Source = new Uri("/EAStyles;component/Themes/MiStyle/MiEfficientDataGrid.xaml",
                     UriKind.RelativeOrAbsolute);
-            System.Windows.Style dataGridStyle = styleRes["miEffiDataGrid"] as Style;
+            Style dataGridStyle = styleRes["miEffiDataGrid"] as Style;
+            Style columnHeaderStyle = styleRes["miEffiColumnHeader"] as Style;
             this.SetValue(MiEfficientDataGrid.StyleProperty, dataGridStyle);
-
+            this.SetValue(MiEfficientDataGrid.ColumnHeaderStyleProperty, columnHeaderStyle);
             ControlUtility.Refresh(this);
         }
     }

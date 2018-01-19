@@ -38,8 +38,6 @@
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Height" Value="24"/>
         <Setter Property="SeparatorBrush" Value="#FFC9CACA" />
-        <!--<Setter Property="FontSize" Value="14"/>-->
-        <!--<Setter Property="FontWeight" Value="SemiBold"/>-->
         <Setter Property="Padding" Value="4 0 0 0"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -74,8 +72,8 @@
                                                   HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                                   Margin='{TemplateBinding Padding}'
                                                   Cursor="{TemplateBinding Cursor}"/>
-                        <Path HorizontalAlignment="Left" x:Name="SortArrow" VerticalAlignment="Center" 
-                                      Width="8" Opacity="0" RenderTransformOrigin=".5,.5" Grid.Column="2" Grid.RowSpan="2" Fill="#FF000000" Stretch="Uniform" Data="F1 M -5.215,6.099L 5.215,6.099L 0,0L -5.215,6.099 Z ">
+                        <Path HorizontalAlignment="Left" x:Name="SortArrow" VerticalAlignment="Center" Margin="4,0,0,0"
+                                      Width="8" Opacity="0" RenderTransformOrigin=".5,.5" Grid.Column="2" Grid.RowSpan="2" Fill="{TemplateBinding Background}" Stretch="Uniform" Data="F1 M -5.215,6.099L 5.215,6.099L 0,0L -5.215,6.099 Z ">
                             <Path.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform ScaleX=".9" ScaleY=".9" x:Name="SortIconTransform" />

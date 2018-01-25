@@ -6,6 +6,7 @@
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiScrollViewer.xaml"/>
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiTitleButton.xaml"/>
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiButton.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiRichButton.xaml"/>
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiToggleButton.xaml"/>
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiDataGrid.xaml"/>
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiEfficientDataGrid.xaml"/> 

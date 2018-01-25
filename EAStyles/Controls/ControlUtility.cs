@@ -55,6 +55,10 @@ namespace EAStyles.Controls
                 {
                     (control as MiButton).BorderBrush = mw.BorderBrush.Clone();
                 }
+                if (control is MiRichButton)
+                {
+                    (control as MiRichButton).BorderBrush = mw.BorderBrush.Clone();
+                }
                 if (control is MiTitleButton)
                 {
                     (control as MiTitleButton).Background = mw.BorderBrush.Clone();

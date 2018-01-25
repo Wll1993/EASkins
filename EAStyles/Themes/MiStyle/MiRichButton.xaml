@@ -4,8 +4,8 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiBase.xaml"/>
     </ResourceDictionary.MergedDictionaries>
-    
-    <Style TargetType="{x:Type Mi:MiButton}">
+
+    <Style TargetType="{x:Type Mi:MiRichButton}">
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="Foreground" Value="Black"/>
@@ -15,7 +15,7 @@
         <Setter Property="MinHeight" Value="20"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Mi:MiButton}">
+                <ControlTemplate TargetType="{x:Type Mi:MiRichButton}">
                     <Grid Background="#00000000">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
@@ -44,6 +44,8 @@
                                 <Border x:Name="back" Background="{TemplateBinding Background}">
                                     <Grid>
                                         <Border x:Name="move" Background="#FFFFFFFF" Opacity="0"/>
+                                        <Mi:MiProgressBar x:Name="progress" Margin="0" Height="4" 
+                                                          CornerRadius="0" VerticalAlignment="Bottom" Visibility="Hidden" IsEnabled="False"/>
                                         <ContentPresenter Margin="{TemplateBinding Padding}" HorizontalAlignment="Center" VerticalAlignment="Center" />                                        
                                     </Grid>
                                 </Border>
@@ -53,20 +55,17 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Foreground" Value="Gray"/>
-                            <!--<Setter TargetName="border" Property="Opacity" Value="0.5"/>-->
                             <Setter TargetName="back" Property="Margin" Value="0"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
                             <Setter TargetName="border" Property="BorderThickness" Value="1"/>
                         </Trigger>
-                        <!--<Trigger Property="MiButtonStyle" Value="StyleOne">
-                            <Setter TargetName="border" Property="Background" Value="#99cb8a"/>
-                            <Setter TargetName="back" Property="Background" Value="#99cb8a"/>
+                        <Trigger Property="IsButtonBusy" Value="true">
+                            <Setter TargetName="progress" Property="ProgressBarState" Value="Wait"/>                            
+                            <Setter TargetName="progress" Property="IsEnabled" Value="True"/>
+                            <Setter TargetName="progress" Property="Visibility" Value="Visible"/>
+                            <Setter Property="IsEnabled" Value="False"/>
                         </Trigger>
-                        <Trigger Property="MiButtonStyle" Value="StyleTwo">
-                            <Setter TargetName="border" Property="Background" Value="#e99595"/>
-                            <Setter TargetName="back" Property="Background" Value="#e99595"/>
-                        </Trigger>-->
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>

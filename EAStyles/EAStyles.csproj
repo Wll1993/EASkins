@@ -90,6 +90,10 @@
     <Compile Include="WFControls\EmiControls.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Themes\MiStyle\MiCheckBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Themes\MiStyle\MiRichButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

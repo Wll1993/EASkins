@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EAStyles.Utilitys;
 using System.Windows.Controls;
 
 namespace EAStyles.Controls.MiStyle
@@ -12,6 +8,10 @@ namespace EAStyles.Controls.MiStyle
         public MiCheckBox()
         {
             ControlUtility.Refresh(this);
+        }
+        static MiCheckBox()
+        {
+            ElementBase.DefaultStyle<MiCheckBox>(DefaultStyleKeyProperty);
         }
     }
 }

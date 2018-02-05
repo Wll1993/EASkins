@@ -23,8 +23,8 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.Column="0" >
-                        <Mi:MiButton  Content="button" Margin="10"/>
-                        <Mi:MiRichButton  Content="button" Margin="10" IsButtonBusy="True"/>
+                        <Mi:MiButton  Content="button" Height="24" Margin="10"/>
+                        <Mi:MiRichButton  Content="button" Height="30" Margin="10" IsButtonBusy="True"/>
                         <Mi:MiTextBox Margin="10"/>
                         <Mi:MiRichTextBox Margin="10"/>
                         <Mi:MiComboBox Margin="10" >

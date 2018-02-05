@@ -1,6 +1,7 @@
 ﻿using EAStyles.Controls.MiStyle;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,19 @@ namespace EAWpfDemo
         public MainWindow()
         {
             InitializeComponent();
+            InitDataGrid();
+        }
+
+        private void InitDataGrid()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.AddRange(new DataColumn[]{ new DataColumn("test1"),new DataColumn("test2"),new DataColumn("test3")});
+            dt.Rows.Add(new object[3]{"1","3","2" });
+            dt.Rows.Add(new object[3] { "4", "3", "2" });
+            dt.Rows.Add(new object[3] { "7", "3", "6" });
+            dt.Rows.Add(new object[3] { "1", "9", "2" });
+            miDataGrid.DataContext = dt.DefaultView;
+            miEDataGrid.DataContext = dt.DefaultView;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

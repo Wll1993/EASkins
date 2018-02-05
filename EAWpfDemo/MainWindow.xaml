@@ -16,25 +16,39 @@
         <Mi:MiTabControl Margin="0" >
             <Mi:MiTabItem Header="TabItem1" IdxHeader="1">
                 <Grid >
-                    <Mi:MiButton  Content="button" Margin="10,10,494.2,393.4"/>
-                    <Mi:MiRichButton  Content="button" Margin="230,10,266.2,393.4" IsButtonBusy="True"/>
-                    <Mi:MiTextBox Margin="10,129,494.2,284.4"/>
-                    <Mi:MiRichTextBox Margin="10,303,425.2,10.4"/>
-                    <Mi:MiComboBox Margin="10,76,494.2,340.4" RenderTransformOrigin="0.5,0.5">
-                        <ComboBoxItem>哈哈</ComboBoxItem>
-                        <ComboBoxItem>呵呵</ComboBoxItem>
-                        <ComboBoxItem>嘿嘿</ComboBoxItem>
-                    </Mi:MiComboBox>
-                    <Mi:MiToggleButton Height="24" Margin="134,10,425.2,393.4"/>
-                    <Mi:MiDateTimePicker Margin="10,184,425.2,229.4"/>
-                    <Mi:MiProgressBar Margin="10,226,425.2,179.4" Height="20" />
-                    <Mi:MiDataGrid Margin="230,90,10.2,229.4">
-                        <DataGridColumnHeader>test1</DataGridColumnHeader>
-                        <DataGridColumnHeader>test2</DataGridColumnHeader>
-                        <DataGridColumnHeader>test3</DataGridColumnHeader>
-                    </Mi:MiDataGrid>
-                    <Mi:MiCheckBox Margin="230,253,266.2,167.4" IsChecked="{x:Null}">是否开启</Mi:MiCheckBox>
-                    <Mi:MiCheckBox Margin="230,283,266.2,133.4" IsEnabled="False">是否开启</Mi:MiCheckBox>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" >
+                        <Mi:MiButton  Content="button" Margin="10"/>
+                        <Mi:MiRichButton  Content="button" Margin="10" IsButtonBusy="True"/>
+                        <Mi:MiTextBox Margin="10"/>
+                        <Mi:MiRichTextBox Margin="10"/>
+                        <Mi:MiComboBox Margin="10" >
+                            <ComboBoxItem>哈哈</ComboBoxItem>
+                            <ComboBoxItem>呵呵</ComboBoxItem>
+                            <ComboBoxItem>嘿嘿</ComboBoxItem>
+                        </Mi:MiComboBox>
+                        <Mi:MiToggleButton Height="24" Margin="10"/>
+                        <Mi:MiCheckBox Margin="10" IsChecked="{x:Null}">是否开启</Mi:MiCheckBox>
+                        <Mi:MiCheckBox Margin="10" IsEnabled="False">是否开启</Mi:MiCheckBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <Mi:MiDateTimePicker Margin="10"/>
+                        <Mi:MiProgressBar Margin="10" Height="20" />
+                        <Mi:MiDataGrid x:Name="miDataGrid" ItemsSource="{Binding}" Margin="10" Height="150">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="c1" Binding="{Binding test1}"/>
+                                <DataGridTextColumn Header="c2" Binding="{Binding test2}"/>
+                                <DataGridTextColumn Header="c3" Binding="{Binding test3}"/> 
+                            </DataGrid.Columns>                                                       
+                        </Mi:MiDataGrid>
+                        <Mi:MiEfficientDataGrid x:Name="miEDataGrid" ItemsSource="{Binding}" Margin="10" Height="150" AutoGenerateColumns="True">
+                        </Mi:MiEfficientDataGrid>
+                    </StackPanel>
                 </Grid>
             </Mi:MiTabItem>
             <Mi:MiTabItem Header="TabItem2" IdxHeader="2" />

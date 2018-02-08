@@ -26,7 +26,7 @@
                         <Mi:MiButton  Content="button" Height="24" Margin="10"/>
                         <Mi:MiRichButton  Content="button" Height="30" Margin="10" IsButtonBusy="True"/>
                         <Mi:MiTextBox Margin="10"/>
-                        <Mi:MiRichTextBox Margin="10"/>
+                        <Mi:MiRichTextBox Margin="10" Height="40" Text="测试文字测试文字测试文字"/>
                         <Mi:MiComboBox Margin="10" >
                             <ComboBoxItem>哈哈</ComboBoxItem>
                             <ComboBoxItem>呵呵</ComboBoxItem>

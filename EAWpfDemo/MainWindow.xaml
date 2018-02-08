@@ -32,8 +32,10 @@
                             <ComboBoxItem>呵呵</ComboBoxItem>
                             <ComboBoxItem>嘿嘿</ComboBoxItem>
                         </Mi:MiComboBox>
-                        <Mi:MiToggleButton Height="24" Margin="10"/>
+                        <Mi:MiToggleButton Height="26" Margin="10">开关</Mi:MiToggleButton>
+                        <Mi:MiToggleButton Height="26" Margin="10" CornerRadius="20" BorderCornerRadius="14">开关</Mi:MiToggleButton>
                         <Mi:MiCheckBox Margin="10" IsChecked="{x:Null}">是否开启</Mi:MiCheckBox>
+                        <Mi:MiCheckBox Margin="10" IsChecked="True">是否开启</Mi:MiCheckBox>
                         <Mi:MiCheckBox Margin="10" IsEnabled="False">是否开启</Mi:MiCheckBox>
                     </StackPanel>
                     <StackPanel Grid.Column="1">

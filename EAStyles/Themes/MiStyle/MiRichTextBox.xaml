@@ -27,7 +27,7 @@
 
         <Setter Property="AcceptsReturn" Value="True"/>
         <Setter Property="AcceptsTab" Value="True"/>
-
+        
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Mi:MiRichTextBox}">
@@ -37,7 +37,7 @@
                         <Border x:Name="bordermove" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="{TemplateBinding CornerRadius}" BorderBrush="{TemplateBinding MouseMoveBorderBrush}" Opacity="0"/>
                         <Border x:Name="themebordermove" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="{TemplateBinding CornerRadius}" BorderBrush="{TemplateBinding MouseMoveThemeBorderBrush}" Opacity="0"/>
                         <Mi:MiScrollViewer BorderBrush="{TemplateBinding Foreground}" Margin="{TemplateBinding BorderThickness}" Focusable="False" AutoLimitMouse="{TemplateBinding AutoLimitMouse}">
-                            <ScrollViewer x:Name="PART_ContentHost" MinHeight="0" MinWidth="0" Margin="{TemplateBinding Padding}" Focusable="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                            <ScrollViewer x:Name="PART_ContentHost" MinHeight="0" MinWidth="0" Margin="{TemplateBinding Padding}" Focusable="False" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled"/>
                         </Mi:MiScrollViewer>
                     </Grid>
                     <ControlTemplate.Triggers>
@@ -75,7 +75,7 @@
         </Setter>
         <Style.Resources>
             <Style TargetType="{x:Type FlowDocument}">
-                <Setter Property="OverridesDefaultStyle" Value="true"/>
+                <Setter Property="OverridesDefaultStyle" Value="True"/>
                 <Setter Property="PagePadding" Value="0"/>
                 <Setter Property="LineHeight" Value="20"/>
             </Style>

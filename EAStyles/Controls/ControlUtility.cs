@@ -57,7 +57,9 @@ namespace EAStyles.Controls
                 }
                 if (control is MiRichButton)
                 {
-                    (control as MiRichButton).BorderBrush = mw.BorderBrush.Clone();
+                    (control as MiRichButton).BorderBrush = mw.BorderBrush.Clone();                    
+                    (control as MiRichButton).Background = mw.BorderBrush.Clone();
+                    (control as MiRichButton).Background.Opacity = 0.3;
                 }
                 if (control is MiTitleButton)
                 {

@@ -25,3 +25,6 @@
 /MetroUiToolkit/obj
 /MetroUiToolkitDemo/bin/Debug
 /MetroUiToolkitDemo/obj
+*.ini
+*.baml
+*.dtbcache

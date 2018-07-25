@@ -44,7 +44,7 @@
                                 </VisualState>
                                 <VisualState x:Name="EnterIconMode">
                                     <Storyboard>
-                                        <DoubleAnimation Storyboard.TargetName="tab" Storyboard.TargetProperty="(Width)" To="44" Duration="0:0:0.2"/>
+                                        <DoubleAnimation Storyboard.TargetName="tab" Storyboard.TargetProperty="(Width)" To="46" Duration="0:0:0.2"/>
 
                                         <DoubleAnimation Storyboard.TargetName="angle1" Storyboard.TargetProperty="(Angle)" To="0" Duration="0:0:0.2"/>
                                         <DoubleAnimation Storyboard.TargetName="angle2" Storyboard.TargetProperty="(Angle)" To="0" Duration="0:0:0.2"/>
@@ -68,11 +68,11 @@
                                 <VisualState x:Name="SelectionStart"/>
                                 <VisualState x:Name="SelectionStartIconMode">
                                     <Storyboard>
-                                        <DoubleAnimation Storyboard.TargetName="tab" Storyboard.TargetProperty="(Width)" To="44" Duration="0:0:0"/>
+                                        <DoubleAnimation Storyboard.TargetName="tab" Storyboard.TargetProperty="(Width)" To="46" Duration="0:0:0"/>
 
-                                        <ThicknessAnimation Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Margin)" To="0,0,0,11" Duration="0:0:0"/>
+                                        <ThicknessAnimation Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Margin)" To="0,0,0,12" Duration="0:0:0"/>
                                         <DoubleAnimation Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.Opacity)" To="1" Duration="0:0:0"/>
-                                        <ThicknessAnimation Storyboard.TargetName="rectangle3" Storyboard.TargetProperty="(Margin)" To="0,11,0,0" Duration="0:0:0"/>
+                                        <ThicknessAnimation Storyboard.TargetName="rectangle3" Storyboard.TargetProperty="(Margin)" To="0,12,0,0" Duration="0:0:0"/>
                                         <DoubleAnimation Storyboard.TargetName="angle1" Storyboard.TargetProperty="(Angle)" To="0" Duration="0:0:0"/>
                                         <DoubleAnimation Storyboard.TargetName="angle2" Storyboard.TargetProperty="(Angle)" To="0" Duration="0:0:0"/>
                                     </Storyboard>
@@ -93,15 +93,15 @@
                                 </VisualState>
                                 <VisualState x:Name="SelectionEndIconMode">
                                     <Storyboard>
-                                        <DoubleAnimation Storyboard.TargetName="tab" Storyboard.TargetProperty="(Width)" To="44" Duration="0:0:0"/>
+                                        <DoubleAnimation Storyboard.TargetName="tab" Storyboard.TargetProperty="(Width)" To="46" Duration="0:0:0"/>
                                         <ThicknessAnimation Storyboard.TargetName="content" Storyboard.TargetProperty="(Margin)" To="30,0,-30,0" Duration="0:0:0"/>
                                         <DoubleAnimation Storyboard.TargetName="content" Storyboard.TargetProperty="(UIElement.Opacity)" To="0" Duration="0:0:0.0"/>
                                         <ThicknessAnimation Storyboard.TargetName="content" Storyboard.TargetProperty="(Margin)" To="0" Duration="0:0:0.3"/>
                                         <DoubleAnimation Storyboard.TargetName="content" Storyboard.TargetProperty="(UIElement.Opacity)" To="1" Duration="0:0:0.3"/>
 
-                                        <ThicknessAnimation Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Margin)" To="0,0,0,11" Duration="0:0:0"/>
+                                        <ThicknessAnimation Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Margin)" To="0,0,0,12" Duration="0:0:0"/>
                                         <DoubleAnimation Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.Opacity)" To="1" Duration="0:0:0"/>
-                                        <ThicknessAnimation Storyboard.TargetName="rectangle3" Storyboard.TargetProperty="(Margin)" To="0,11,0,0" Duration="0:0:0"/>
+                                        <ThicknessAnimation Storyboard.TargetName="rectangle3" Storyboard.TargetProperty="(Margin)" To="0,12,0,0" Duration="0:0:0"/>
                                         <DoubleAnimation Storyboard.TargetName="angle1" Storyboard.TargetProperty="(Angle)" To="0" Duration="0:0:0"/>
                                         <DoubleAnimation Storyboard.TargetName="angle2" Storyboard.TargetProperty="(Angle)" To="0" Duration="0:0:0"/>
                                     </Storyboard>
@@ -120,27 +120,27 @@
                                 </VisualState>
                                 <VisualState x:Name="SelectionLoadedIconMode">
                                     <Storyboard>
-                                        <DoubleAnimation Storyboard.TargetName="tab" Storyboard.TargetProperty="(Width)" To="44" Duration="0:0:0"/>
+                                        <DoubleAnimation Storyboard.TargetName="tab" Storyboard.TargetProperty="(Width)" To="46" Duration="0:0:0"/>
                                         <ThicknessAnimation Storyboard.TargetName="content" Storyboard.TargetProperty="(Margin)" To="0" Duration="0:0:0"/>
                                         <DoubleAnimation Storyboard.TargetName="content" Storyboard.TargetProperty="(UIElement.Opacity)" To="1" Duration="0:0:0"/>
 
-                                        <ThicknessAnimation Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Margin)" To="0,0,0,11" Duration="0:0:0"/>
+                                        <ThicknessAnimation Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Margin)" To="0,0,0,12" Duration="0:0:0"/>
                                         <DoubleAnimation Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.Opacity)" To="1" Duration="0:0:0"/>
-                                        <ThicknessAnimation Storyboard.TargetName="rectangle3" Storyboard.TargetProperty="(Margin)" To="0,11,0,0" Duration="0:0:0"/>
+                                        <ThicknessAnimation Storyboard.TargetName="rectangle3" Storyboard.TargetProperty="(Margin)" To="0,12,0,0" Duration="0:0:0"/>
                                         <DoubleAnimation Storyboard.TargetName="angle1" Storyboard.TargetProperty="(Angle)" To="0" Duration="0:0:0"/>
                                         <DoubleAnimation Storyboard.TargetName="angle2" Storyboard.TargetProperty="(Angle)" To="0" Duration="0:0:0"/>
                                     </Storyboard>
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                        <Grid x:Name="tab" MinWidth="44" Width="{Binding ActualWidth,ElementName=tabWidth}" Grid.Column="0" KeyboardNavigation.TabIndex="1" Panel.ZIndex="1" Background="{TemplateBinding BorderBrush}">
+                        <Grid x:Name="tab" MinWidth="46" Width="{Binding ActualWidth,ElementName=tabWidth}" Grid.Column="0" KeyboardNavigation.TabIndex="1" Panel.ZIndex="1" Background="{TemplateBinding BorderBrush}">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
                             <Rectangle Fill="#000000" Grid.RowSpan="2" Opacity="0.06"/>
                             <Button UIElement.Opacity="0" Command="Mi:MiTabControl.IconModeClickCommand"/>
-                            <Grid Width="44" Height="40" HorizontalAlignment="Left" IsHitTestVisible="False">
+                            <Grid Width="46" Height="40" HorizontalAlignment="Left" IsHitTestVisible="False">
                                 <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Width="23" Height="23" Opacity="0.9">
                                     <Rectangle x:Name="rectangle1" Width="22" Height="1" VerticalAlignment="Center" HorizontalAlignment="Center" Fill="#FFFFFF" Margin="0,0,0,11" RenderTransformOrigin="0.5,0.5">
                                         <Rectangle.RenderTransform>

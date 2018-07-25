@@ -56,7 +56,7 @@
             <Mi:MiTabItem Header="TabItem2" IdxHeader="2" />
             <Mi:MiTabItem Header="TabItem2" IdxHeader="99" />
             <Mi:MiTabItem Header="TabItem2" IdxHeader="-"/>
-            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2" IdxHeader="365"/>
             <Mi:MiTabItem Header="TabItem2"/>
             <Mi:MiTabItem Header="TabItem2"/>
             <Mi:MiTabItem Header="TabItem2"/>

@@ -28,3 +28,4 @@
 *.ini
 *.baml
 *.dtbcache
+/EAStyles/obj/Release

@@ -15,7 +15,8 @@
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiComboBox.xaml"/>
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiTextBlock.xaml"/>
         <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiProgressBar.xaml"/>
-        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiCheckBox.xaml"/> 
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiCheckBox.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiRadioButton.xaml"/>
     </ResourceDictionary.MergedDictionaries>
-</ResourceDictionary>
+</ResourceDictionary> 
 

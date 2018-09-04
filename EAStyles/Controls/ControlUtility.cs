@@ -101,6 +101,10 @@ namespace EAStyles.Controls
                 {
                     (control as MiCheckBox).BorderBrush = mw.BorderBrush.Clone();
                 }
+                if (control is MiRadioButton)
+                {
+                    (control as MiRadioButton).BorderBrush = mw.BorderBrush.Clone();
+                }
                 //if (control is MiTitleMenu)
                 //{
                 //    (control as MiTitleMenu).Background = mw.BorderBrush;

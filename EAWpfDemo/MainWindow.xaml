@@ -18,8 +18,8 @@
                 <Grid >
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
                         <ColumnDefinition Width="200"/>
-                        <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.Column="0" >
@@ -39,6 +39,10 @@
                         <Mi:MiCheckBox Margin="10" IsEnabled="False">是否开启</Mi:MiCheckBox>
                     </StackPanel>
                     <StackPanel Grid.Column="1">
+                        <Mi:MiRadioButton Margin="10">单选1</Mi:MiRadioButton>
+                        <Mi:MiRadioButton Margin="10">单选2</Mi:MiRadioButton>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2">
                         <Mi:MiDateTimePicker Margin="10"/>
                         <Mi:MiProgressBar Margin="10" Height="20" />
                         <Mi:MiDataGrid x:Name="miDataGrid" ItemsSource="{Binding}" Margin="10" Height="150">

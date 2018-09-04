@@ -19,8 +19,8 @@
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                             <Border x:Name="border" Width="16" Height="16" CornerRadius="0"
                                    BorderThickness="0" BorderBrush="{TemplateBinding BorderBrush}" >
-                                <Border x:Name="border1" BorderThickness="1" Width="14" Height="14" 
-                                        CornerRadius="0" BorderBrush="{StaticResource EGrayBrush}">
+                                <Border x:Name="border1" BorderThickness="1" Width="14" Height="14" CornerRadius="0"
+                                         Background="{StaticResource Black5}" BorderBrush="{StaticResource EGrayBrush}">
                                 <Path 
                                         Width="8" Height="8" 
                                         x:Name="checkMark"

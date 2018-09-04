@@ -42,10 +42,8 @@
     <Style TargetType="{x:Type Mi:MiTextBox}">
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
-
         <Setter Property="AcceptsReturn" Value="False"/>
         <Setter Property="TextWrapping" Value="NoWrap"/>
-
         <Setter Property="Background" Value="#FFFFFFFF"/>
         <Setter Property="MouseMoveBackground" Value="#FFFFFFFF"/>
         <Setter Property="BorderBrush" Value="{StaticResource Brush}"/>
@@ -54,6 +52,7 @@
         <Setter Property="TitleMinWidth" Value="80"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="CornerRadius" Value="0"/>
+        <Setter Property="FontSize" Value="{StaticResource SmallFontSize}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Mi:MiTextBox}">

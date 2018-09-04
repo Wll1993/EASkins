@@ -37,13 +37,15 @@
     </Style>
     <!--Combox-->
     <Style TargetType="Mi:MiComboBox">
-        <Setter Property="IsEditable" Value="True"/> 
+        <Setter Property="IsEditable" Value="True"/>
+        <Setter Property="FontSize" Value="{StaticResource SmallFontSize}"/>
         <Setter Property="ItemContainerStyle">
             <Setter.Value>
                 <!--ComBoxItem-->
                 <Style TargetType="ComboBoxItem">
                     <Setter Property="MinHeight" Value="22"></Setter>
                     <Setter Property="MinWidth" Value="40"></Setter>
+                    <Setter Property="FontSize" Value="{StaticResource SmallFontSize}"/>
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="ComboBoxItem">
@@ -72,7 +74,7 @@
                         </Grid.ColumnDefinitions>
                         <!--文字区域背景和边线样式-->                        
                         <TextBox VerticalAlignment="Center" Grid.Column="0" BorderThickness="0" IsReadOnly="{TemplateBinding IsReadOnly}" IsEnabled="{TemplateBinding IsEditable}" 
-                                 Text="{Binding Path=Text,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,RelativeSource={RelativeSource TemplatedParent}}" 
+                                 Text="{Binding Path=Text,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,RelativeSource={RelativeSource TemplatedParent}}" FontSize="{TemplateBinding FontSize}"
                                  Margin="0" TextWrapping="NoWrap" SnapsToDevicePixels="True" VerticalContentAlignment="Center" Height="26"/>
                         <Border x:Name="borderNormal" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="1" BorderBrush="{StaticResource EGrayBrush}" CornerRadius="0" Opacity="1"/>
                         <Border x:Name="borderFocus" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="1" BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="0" Opacity="0"/>

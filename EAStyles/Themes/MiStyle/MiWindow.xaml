@@ -54,8 +54,8 @@
         <Setter Property="Foreground" Value="#FF000000"/>
         <Setter Property="TitleForeground" Value="#ffffff"/>
         <Setter Property="BorderThickness" Value="4"/>
-        
-        <Setter Property="FontSize" Value="12"/>
+
+        <Setter Property="FontSize" Value="{StaticResource SmallFontSize}"/>
         <Setter Property="TextOptions.TextFormattingMode" Value="Display"/>
         <Setter Property="TextOptions.TextRenderingMode" Value="ClearType"/>
         <Setter Property="UseLayoutRounding" Value="True"/>

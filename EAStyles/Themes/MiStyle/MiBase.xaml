@@ -5,7 +5,7 @@
     <SolidColorBrush x:Key="Brush" Color="#FF565656"/><!--主基色画笔-->
     <Color x:Key="EGrayColor" A="255" R="181" G="181" B="181"/><!--空白处颜色-->
     <SolidColorBrush x:Key="EGrayBrush" Color="#FFB5B5B5"/><!--空白处颜色画笔-->
-
+    
     <!-- Black Brush Colors-->
     <SolidColorBrush x:Key="Black100"  Color="#FF333333" />
     <SolidColorBrush x:Key="Black80"  Color="#FF595959" />

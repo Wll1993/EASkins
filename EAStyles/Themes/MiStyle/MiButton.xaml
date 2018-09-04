@@ -13,6 +13,7 @@
         <Setter Property="BorderBrush" Value="{StaticResource Brush}"/>
         <Setter Property="MinWidth" Value="10"/>
         <Setter Property="MinHeight" Value="10"/>
+        <Setter Property="FontSize" Value="{StaticResource SmallFontSize}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Mi:MiButton}">

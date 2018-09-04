@@ -5,6 +5,7 @@
     <Style TargetType="{x:Type Mi:MiTextBlock}">
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Margin" Value="1"/>
+        <Setter Property="FontSize" Value="{StaticResource SmallFontSize}"/>
     </Style>
     
 </ResourceDictionary>

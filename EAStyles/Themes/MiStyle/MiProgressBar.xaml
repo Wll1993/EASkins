@@ -15,7 +15,7 @@
         <Setter Property="CornerRadius" Value="7.5"/>
         <Setter Property="ProgressBarState" Value="None"/>
         <Setter Property="Background" Value="#6fae5f"/>
-        <Setter Property="FontSize" Value="10"/>
+        <Setter Property="FontSize" Value="{StaticResource SmallFontSize}"/>
         <Setter Property="Padding" Value="5,0"/>
         <Setter Property="TextHorizontalAlignment" Value="Left"/>
         <Setter Property="Template">

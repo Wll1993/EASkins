@@ -15,17 +15,27 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Mi:MiTextLink}">
-                    <Grid>                        
-                        <TextBlock VerticalAlignment="Center">
-                            <Hyperlink x:Name="hyLinkText" Foreground="{TemplateBinding Foreground}" >
+                    <Grid>
+                        <TextBlock VerticalAlignment="{TemplateBinding VerticalAlignment}" 
+                                   HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                                   >
+                            <Hyperlink x:Name="hyLinkText" Foreground="{TemplateBinding Foreground}" 
+                                       TextDecorations ="{x:Null}">
                                 <ContentPresenter></ContentPresenter>
                             </Hyperlink>
                         </TextBlock>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="true">
-                            <Setter  TargetName="hyLinkText" Property="Foreground" Value="{StaticResource Brush}"></Setter>
+                            <Setter TargetName="hyLinkText" Property="TextDecorations">
+                                <Setter.Value>
+                                    <TextDecorationCollection>
+                                        <TextDecoration Location="Underline"/>
+                                    </TextDecorationCollection>
+                                </Setter.Value>
+                            </Setter>
                         </Trigger>
+                        
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="Foreground" Value="{StaticResource EGrayBrush}"/>
                         </Trigger>

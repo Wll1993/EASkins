@@ -12,7 +12,6 @@
         <Setter Property="Background" Value="{x:Null}"/>
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="FontSize" Value="{StaticResource SmallFontSize}"/>
-        <Setter Property="BorderBrush" Value="Red"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Mi:MiTextLink}">
@@ -30,11 +29,15 @@
                             <Setter TargetName="hyLinkText" Property="TextDecorations">
                                 <Setter.Value>
                                     <TextDecorationCollection>
-                                        <TextDecoration Location="Underline"/>
+                                        <TextDecoration Location="Underline">
+                                            <TextDecoration.Pen>
+                                                <Pen Thickness="2" Brush="{Binding BorderBrush, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Mi:MiTextLink}}}" />
+                                            </TextDecoration.Pen>
+                                        </TextDecoration>
                                     </TextDecorationCollection>
                                 </Setter.Value>
                             </Setter>
-                        </Trigger>                        
+                        </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="Foreground" Value="{StaticResource EGrayBrush}"/>
                         </Trigger>

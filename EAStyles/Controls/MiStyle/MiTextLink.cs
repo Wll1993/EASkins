@@ -2,13 +2,13 @@
 using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Input;
 
 namespace EAStyles.Controls.MiStyle
 {
     public class MiTextLink : UserControl
-    {
-        //public static readonly DependencyProperty ContentProperty = ElementBase.Property<MiTextLink, string>("ContentProperty", "");
-        //public string Content { get { return (string)GetValue(ContentProperty); } set { SetValue(ContentProperty, value); } }
+    {        
         public MiTextLink()
         {
             ResourceDictionary styleRes = new ResourceDictionary();

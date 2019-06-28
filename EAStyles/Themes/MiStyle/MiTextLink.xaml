@@ -9,6 +9,7 @@
     <Style x:Key="miTextLink" TargetType="{x:Type Mi:MiTextLink}">
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Margin" Value="1"/>
+        <Setter Property="Background" Value="{x:Null}"/>
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="FontSize" Value="{StaticResource SmallFontSize}"/>
         <Setter Property="BorderBrush" Value="Red"/>
@@ -34,8 +35,7 @@
                                     </TextDecorationCollection>
                                 </Setter.Value>
                             </Setter>
-                        </Trigger>
-                        
+                        </Trigger>                        
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="Foreground" Value="{StaticResource EGrayBrush}"/>
                         </Trigger>

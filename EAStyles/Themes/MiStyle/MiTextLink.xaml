@@ -18,10 +18,9 @@
                 <ControlTemplate TargetType="{x:Type Mi:MiTextLink}">
                     <Grid>
                         <TextBlock VerticalAlignment="{TemplateBinding VerticalAlignment}" 
-                                   HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
-                                   >
+                                   HorizontalAlignment="{TemplateBinding HorizontalAlignment}">
                             <Hyperlink x:Name="hyLinkText" Foreground="{TemplateBinding Foreground}" 
-                                       TextDecorations ="{x:Null}">
+                                       TextDecorations ="{x:Null}" IsEnabled="False">
                                 <ContentPresenter></ContentPresenter>
                             </Hyperlink>
                         </TextBlock>

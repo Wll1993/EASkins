@@ -52,8 +52,9 @@
                                 <DataGridTextColumn Header="c3" Binding="{Binding test3}"/> 
                             </DataGrid.Columns>                                                       
                         </Mi:MiDataGrid>
-                        <Mi:MiEfficientDataGrid x:Name="miEDataGrid" ItemsSource="{Binding}" Margin="10" Height="150" AutoGenerateColumns="True">
+                        <Mi:MiEfficientDataGrid x:Name="miEDataGrid" ItemsSource="{Binding}" Margin="10 0" Height="150" AutoGenerateColumns="True">
                         </Mi:MiEfficientDataGrid>
+                        <Mi:MiTextLink Height="40" Margin="10 0" Mouse.MouseDown="MiTextLink_MouseDown">文字链接</Mi:MiTextLink>
                     </StackPanel>
                 </Grid>
             </Mi:MiTabItem>

@@ -3,7 +3,7 @@
 ################################################################################
 
 /Arthas.Demo/bin/Debug
-/.vs/EASkins/v15/Server/sqlite3
+/.vs/EASkins
 /Arthas.Demo/obj/Debug
 /EASkins/bin/Debug
 /EASkins/obj/Debug/EAStyles/Themes/MiStyle
@@ -28,4 +28,5 @@
 *.ini
 *.baml
 *.dtbcache
+*.suo
 /EAStyles/obj/Release

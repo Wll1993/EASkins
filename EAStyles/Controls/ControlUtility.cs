@@ -105,6 +105,10 @@ namespace EAStyles.Controls
                 {
                     (control as MiRadioButton).BorderBrush = mw.BorderBrush.Clone();
                 }
+                //if (control is MiTextLink)
+                //{
+                //    (control as MiTextLink).BorderBrush = mw.BorderBrush.Clone();
+                //}
                 //if (control is MiTitleMenu)
                 //{
                 //    (control as MiTitleMenu).Background = mw.BorderBrush;

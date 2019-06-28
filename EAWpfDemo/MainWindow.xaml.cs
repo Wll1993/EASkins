@@ -57,5 +57,10 @@ namespace EAWpfDemo
             style.WindowStartupLocation = WindowStartupLocation.CenterOwner;
             style.ShowDialog();
         }
+
+        private void MiTextLink_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("点击了MiTextLink");
+        }
     }
 }

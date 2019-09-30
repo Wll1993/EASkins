@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EASkins</RootNamespace>
     <AssemblyName>EASkins</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -100,12 +100,8 @@
     <Compile Include="Material\DrawHelper.cs" />
     <Compile Include="Material\IMaterialControl.cs" />
     <Compile Include="Material\MaterialSkinManager.cs" />
-    <Compile Include="MiTheme\Ami Theme.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="MiTheme\Emi Theme.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="MiTheme\Ami Theme.cs" />
+    <Compile Include="MiTheme\Emi Theme.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs" />
   </ItemGroup>

@@ -8,9 +8,8 @@
 /EASkins/bin/Debug
 /EASkins/obj/Debug/EAStyles/Themes/MiStyle
 /EASkins/obj/Debug
-/EAStyles/bin/Debug
-/EAStyles/obj/Debug
-/EAWpfDemo/obj/Debug
+/EAStyles/bin/
+/EAStyles/obj/
 /MaterialExample/bin/Debug
 /MaterialExample/obj/Debug
 /Arthas/bin/Debug
@@ -29,5 +28,6 @@
 *.baml
 *.dtbcache
 *.suo
-/EAStyles/obj/Release
-/EAStyles/.vs/EAStyles/v16/Server/sqlite3
+/EAStyles.Demo/obj/
+/EAStyles.Demo/bin/
+/EAStyles/.vs/

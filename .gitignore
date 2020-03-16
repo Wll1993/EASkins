@@ -30,3 +30,4 @@
 *.dtbcache
 *.suo
 /EAStyles/obj/Release
+/EAStyles/.vs/EAStyles/v16/Server/sqlite3

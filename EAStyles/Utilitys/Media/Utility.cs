@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Drawing;
-using System.Drawing.Imaging;
 using System.Windows;
 using System.Windows.Interop;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace EAStyles.Utilitys
@@ -158,25 +158,25 @@ namespace EAStyles.Utilitys
         /// </summary>
         /// <param name="bitmapImage"></param>
         /// <returns></returns>
-        internal static Bitmap BitmapImageToBitmap(BitmapImage bitmapImage)
-        {
-            PixelFormat pp = PixelFormat.Format32bppArgb;
-            Bitmap bmp = new Bitmap(bitmapImage.PixelWidth, bitmapImage.PixelHeight, pp);
-            BitmapData data = bmp.LockBits(new Rectangle(System.Drawing.Point.Empty, bmp.Size), ImageLockMode.WriteOnly, pp);
-            bitmapImage.CopyPixels(Int32Rect.Empty, data.Scan0, data.Height * data.Stride, data.Stride);
-            bmp.UnlockBits(data);
-            return bmp;
-        }
+        //internal static Bitmap BitmapImageToBitmap(BitmapImage bitmapImage)
+        //{
+        //    PixelFormat pp = PixelFormat.Format32bppArgb;
+        //    Bitmap bmp = new Bitmap(bitmapImage.PixelWidth, bitmapImage.PixelHeight, pp);
+        //    BitmapData data = bmp.LockBits(new Rectangle(System.Drawing.Point.Empty, bmp.Size), ImageLockMode.WriteOnly, pp);
+        //    bitmapImage.CopyPixels(Int32Rect.Empty, data.Scan0, data.Height * data.Stride, data.Stride);
+        //    bmp.UnlockBits(data);
+        //    return bmp;
+        //}
 
         /// <summary>
         /// Bitmap转BitmapSource
         /// </summary>
         /// <param name="bitmap"></param>
         /// <returns></returns>
-        internal static BitmapSource BitmapToBitmapSource(Bitmap bitmap)
-        {
-            return Imaging.CreateBitmapSourceFromHBitmap(bitmap.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
-        }
+        //internal static BitmapSource BitmapToBitmapSource(Bitmap bitmap)
+        //{
+        //    return Imaging.CreateBitmapSourceFromHBitmap(bitmap.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
+        //}
 
 
 

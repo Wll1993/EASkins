@@ -2,17 +2,18 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/Arthas.Demo/bin/Debug
-/.vs/EASkins
-/Arthas.Demo/obj/Debug
-/EASkins/bin/Debug
+/Arthas.Demo/bin/
+/.vs/
+/Arthas.Demo/obj/
+/EASkins/bin/Debug/
 /EASkins/obj/Debug/EAStyles/Themes/MiStyle
-/EASkins/obj/Debug
-/EAStyles/bin/Debug
-/EAStyles/obj/Debug
-/EAWpfDemo/obj/Debug
-/MaterialExample/bin/Debug
-/MaterialExample/obj/Debug
+/EASkins/obj/
+/EAStyles/bin/
+/EAStyles/bin/Release/
+/EAStyles/obj/
+/EAWpfDemo/obj
+/MaterialExample/bin
+/MaterialExample/obj
 /Arthas/bin/Debug
 /Arthas/obj/Debug/Controls/Metro
 /Arthas/obj/Debug/TempPE
@@ -23,10 +24,10 @@
 /EAWpfDemo/bin/Debug
 /MetroUiToolkit/bin
 /MetroUiToolkit/obj
-/MetroUiToolkitDemo/bin/Debug
+/MetroUiToolkitDemo/bin
 /MetroUiToolkitDemo/obj
 *.ini
 *.baml
 *.dtbcache
 *.suo
-/EAStyles/obj/Release
+

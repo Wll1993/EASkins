@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using PixelFormat = System.Drawing.Imaging.PixelFormat;
 
 namespace EAStyles.Utilitys
 {
@@ -94,7 +97,7 @@ namespace EAStyles.Utilitys
             return new RgbaColor((int)(255.0 * r), (int)(255.0 * g), (int)(255.0 * b), (int)(255.0 * hsba.A));
         }
 
-        /*
+        
         /// <summary>
         /// Bitmap转byte[]
         /// </summary>
@@ -127,7 +130,7 @@ namespace EAStyles.Utilitys
             color[3] = buffer[x * 4 + y * w * 4 + 3];
             return color;
         }
-        */
+        
 
 
         /// <summary>
@@ -156,27 +159,27 @@ namespace EAStyles.Utilitys
         /// <summary>
         /// BitmapImage转Bitmap
         /// </summary>
-        /// <param name="bitmapImage"></param>
-        /// <returns></returns>
-        //internal static Bitmap BitmapImageToBitmap(BitmapImage bitmapImage)
-        //{
-        //    PixelFormat pp = PixelFormat.Format32bppArgb;
-        //    Bitmap bmp = new Bitmap(bitmapImage.PixelWidth, bitmapImage.PixelHeight, pp);
-        //    BitmapData data = bmp.LockBits(new Rectangle(System.Drawing.Point.Empty, bmp.Size), ImageLockMode.WriteOnly, pp);
-        //    bitmapImage.CopyPixels(Int32Rect.Empty, data.Scan0, data.Height * data.Stride, data.Stride);
-        //    bmp.UnlockBits(data);
-        //    return bmp;
-        //}
+        /// <param name = "bitmapImage" ></ param >
+        /// < returns ></ returns >
+        internal static Bitmap BitmapImageToBitmap(BitmapImage bitmapImage)
+        {
+            PixelFormat pp = PixelFormat.Format32bppArgb;
+            Bitmap bmp = new Bitmap(bitmapImage.PixelWidth, bitmapImage.PixelHeight, pp);
+            BitmapData data = bmp.LockBits(new Rectangle(System.Drawing.Point.Empty, bmp.Size), ImageLockMode.WriteOnly, pp);
+            bitmapImage.CopyPixels(Int32Rect.Empty, data.Scan0, data.Height * data.Stride, data.Stride);
+            bmp.UnlockBits(data);
+            return bmp;
+        }
 
         /// <summary>
         /// Bitmap转BitmapSource
         /// </summary>
-        /// <param name="bitmap"></param>
-        /// <returns></returns>
-        //internal static BitmapSource BitmapToBitmapSource(Bitmap bitmap)
-        //{
-        //    return Imaging.CreateBitmapSourceFromHBitmap(bitmap.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
-        //}
+        /// <param name = "bitmap" ></ param >
+        /// < returns ></ returns >
+        internal static BitmapSource BitmapToBitmapSource(Bitmap bitmap)
+        {
+            return Imaging.CreateBitmapSourceFromHBitmap(bitmap.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
+        }
 
 
 

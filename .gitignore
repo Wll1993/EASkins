@@ -12,3 +12,10 @@
 *.baml
 *.dtbcache
 *.suo
+/Arthas/obj/Debug
+/Arthas.Demo/obj/Debug
+/EASkins/obj/Debug
+/EAWpfDemo/obj/Debug
+/MaterialExample/obj/Debug
+/MetroUiToolkit/obj/Debug
+/MetroUiToolkitDemo/obj/Debug

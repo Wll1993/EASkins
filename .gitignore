@@ -30,3 +30,4 @@
 *.baml
 *.dtbcache
 *.suo
+/EAStyles.Demo

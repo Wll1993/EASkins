@@ -35,7 +35,7 @@
                     <!--触发器：设置选中状态符号-->
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="true">
-                            <Setter TargetName="checkMark" Property="Data" Value="M 1 1 L 7 7 M 1 7 L 7 1" />
+                            <Setter TargetName="checkMark" Property="Data" Value="M 1 1 L 7 1 L 7 7 L 1 7 Z M 3 1 L 3 7 M 5 1 L 5 7" />
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
                             <Setter  TargetName="border1" Property="BorderThickness" Value="0"></Setter>

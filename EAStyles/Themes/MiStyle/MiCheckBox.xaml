@@ -42,7 +42,7 @@
                             <Setter TargetName="CheckMark" Property="Visibility" Value="Collapsed"/>
                         </Trigger>
                         <Trigger Property="IsChecked" Value="{x:Null}">
-                            <Setter TargetName="CheckMark" Property="Data" Value="M 1 1 L 7 1 L 7 7 L 1 7 L 1 1" />
+                            <Setter TargetName="CheckMark" Property="Data" Value="M 1 1 L 7 1 L 7 7 L 1 7 Z" />
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
                             <Setter TargetName="Border" Property="Background" Value="{StaticResource Black20}" />
